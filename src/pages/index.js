@@ -117,11 +117,13 @@ export default function Home() {
                   hoverHandler.enter(destination.bg);
                 }}
                 onMouseLeave={() => {
-                  // https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout#examples
                   hoverHandler.leave();
                 }}
               >
-                <FontAwesomeIcon icon={destination.icon} className="text-4xl" />{' '}
+                <FontAwesomeIcon
+                  icon={destination.icon}
+                  className="text-2xl md:text-4xl"
+                />{' '}
                 <span className="text-lg font-medium">{destination.label}</span>
               </Link>
             </li>
