@@ -85,7 +85,7 @@ export default function Home() {
   return (
     <div
       className={classNames(
-        'flex min-h-screen flex-col p-8 md:p-24 gap-[10vh] transition-colors',
+        'flex min-h-[100dvh] flex-col p-8 md:p-24 gap-[10vh] transition-colors',
         bg,
         text,
       )}
