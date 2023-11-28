@@ -5,7 +5,7 @@ import {
   faYoutube,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
-import { faAt } from '@fortawesome/pro-solid-svg-icons';
+import { faAt, faSwords } from '@fortawesome/pro-solid-svg-icons';
 import Link from 'next/link';
 import randyHead from '../assets/images/randy.png';
 
@@ -28,7 +28,7 @@ export default function Home() {
   const destinations = [
     {
       icon: faLinkedin,
-      label: 'LinkedIn',
+      label: 'Resume',
       url: 'https://www.linkedin.com/in/amazingrando/',
     },
     {
@@ -37,7 +37,8 @@ export default function Home() {
       url: 'https://www.youtube.com/channel/UCox8hD-hnxaNTdFVkWT64gA',
     },
     { icon: faAt, label: 'Email', url: 'mailto:oest@amazingrando.com' },
-    { icon: faGithub, label: 'Github', url: 'https://github.com/amazingrando' },
+    { icon: faGithub, label: 'Code', url: 'https://github.com/amazingrando' },
+    { icon: faSwords, label: 'TTRPGs', url: 'https://drinkinganddragons.com/' },
   ];
   return (
     <div className="flex min-h-screen flex-col p-8 md:p-24 gap-[10vh]">
