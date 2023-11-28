@@ -63,35 +63,6 @@ export default function Home() {
   const [bg, setBg] = useState('bg-white');
   const [text, setText] = useState('text-almostBlack');
 
-  const defaultTypography = () => {
-    setBg('bg-white');
-    setText('text-almostBlack');
-  };
-
-  // const alarm = {
-  //   remind(aMessage) {
-  //     alert(aMessage);
-  //     this.timeoutID = undefined;
-  //   },
-
-  //   setup() {
-  //     if (typeof this.timeoutID === 'number') {
-  //       this.cancel();
-  //     }
-
-  //     this.timeoutID = setTimeout(
-  //       (msg) => {
-  //         this.remind(msg);
-  //       },
-  //       1000,
-  //       'Wake up!',
-  //     );
-  //   },
-
-  //   cancel() {
-  //     clearTimeout(this.timeoutID);
-  //   },
-  // };
   const hoverHandler = {
     timeoutID: null,
 
