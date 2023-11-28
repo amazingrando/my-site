@@ -9,6 +9,12 @@ module.exports = {
     extend: {
       colors: {
         randyGray: '#767676',
+        youtube: '#FF0000',
+        linkedin: '#0077B5',
+        github: '#181717',
+        ttrpg: '#922A1E',
+        email: '#3366FF',
+        almostBlack: '#282828',
       },
       fontFamily: {
         base: ['GeneralSans-Variable', 'system-ui', 'sans-serif'],

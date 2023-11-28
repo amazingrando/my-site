@@ -7,15 +7,18 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faAt, faSwords } from '@fortawesome/pro-solid-svg-icons';
 import Link from 'next/link';
+import { useState } from 'react';
+import classNames from 'classnames';
 import randyHead from '../assets/images/randy.png';
 
-const Destination = (value) => {
-  const { icon, label, url } = value;
+const Destination = (value, setBg) => {
+  const { icon, label, url, bg } = value;
   return (
     <li>
       <Link
         href={url}
         className="flex flex-row gap-2 items-center text-randyGray hover:text-blue-800 transition-colors"
+        onMouseEnter={setBg(bg || 'bg-white')}
       >
         <FontAwesomeIcon icon={icon} className="text-4xl" />{' '}
         <span className="text-lg font-medium">{label}</span>
@@ -30,18 +33,92 @@ export default function Home() {
       icon: faLinkedin,
       label: 'Resume',
       url: 'https://www.linkedin.com/in/amazingrando/',
+      bg: 'bg-linkedin',
     },
     {
       icon: faYoutube,
       label: 'Talks',
       url: 'https://www.youtube.com/channel/UCox8hD-hnxaNTdFVkWT64gA',
+      bg: 'bg-youtube',
     },
-    { icon: faAt, label: 'Email', url: 'mailto:oest@amazingrando.com' },
-    { icon: faGithub, label: 'Code', url: 'https://github.com/amazingrando' },
-    { icon: faSwords, label: 'TTRPGs', url: 'https://drinkinganddragons.com/' },
+    {
+      icon: faAt,
+      label: 'Email',
+      url: 'mailto:oest@amazingrando.com',
+      bg: 'bg-email',
+    },
+    {
+      icon: faGithub,
+      label: 'Code',
+      url: 'https://github.com/amazingrando',
+      bg: 'bg-github',
+    },
+    {
+      icon: faSwords,
+      label: 'TTRPGs',
+      url: 'https://drinkinganddragons.com/',
+      bg: 'bg-ttrpg',
+    },
   ];
+  const [bg, setBg] = useState('bg-white');
+  const [text, setText] = useState('text-almostBlack');
+
+  const defaultTypography = () => {
+    setBg('bg-white');
+    setText('text-almostBlack');
+  };
+
+  // const alarm = {
+  //   remind(aMessage) {
+  //     alert(aMessage);
+  //     this.timeoutID = undefined;
+  //   },
+
+  //   setup() {
+  //     if (typeof this.timeoutID === 'number') {
+  //       this.cancel();
+  //     }
+
+  //     this.timeoutID = setTimeout(
+  //       (msg) => {
+  //         this.remind(msg);
+  //       },
+  //       1000,
+  //       'Wake up!',
+  //     );
+  //   },
+
+  //   cancel() {
+  //     clearTimeout(this.timeoutID);
+  //   },
+  // };
+  const hoverHandler = {
+    timeoutID: null,
+
+    reset() {
+      setBg('bg-white');
+      setText('text-almostBlack');
+    },
+
+    enter(bgValue) {
+      clearTimeout(hoverHandler.timeoutID);
+      setBg(bgValue || 'bg-white');
+      setText('text-white');
+    },
+
+    leave() {
+      hoverHandler.timeoutID = setTimeout(hoverHandler.reset, 250);
+    },
+  };
+
   return (
-    <div className="flex min-h-screen flex-col p-8 md:p-24 gap-[10vh]">
+    <div
+      className={classNames(
+        'flex min-h-screen flex-col p-8 md:p-24 gap-[10vh] transition-colors',
+        bg,
+        text,
+      )}
+    >
       <header className="flex flex-row no-wrap items-center">
         <Image
           src={randyHead}
@@ -61,7 +138,22 @@ export default function Home() {
       <footer className="mt-auto">
         <ul className="flex flex-row flex-wrap md:flex-row gap-6 md:gap-10">
           {destinations.map((destination) => (
-            <Destination {...destination} key={destination.label} />
+            <li key={destination.label}>
+              <Link
+                href={destination.url}
+                className="flex flex-row gap-2 items-center hover:text-white"
+                onMouseEnter={() => {
+                  hoverHandler.enter(destination.bg);
+                }}
+                onMouseLeave={() => {
+                  // https://developer.mozilla.org/en-US/docs/Web/API/clearTimeout#examples
+                  hoverHandler.leave();
+                }}
+              >
+                <FontAwesomeIcon icon={destination.icon} className="text-4xl" />{' '}
+                <span className="text-lg font-medium">{destination.label}</span>
+              </Link>
+            </li>
           ))}
         </ul>
       </footer>
