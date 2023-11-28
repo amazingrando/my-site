@@ -1,1 +1,1 @@
-![Amazing Rando](./src/assets/images/badge.png)
+![Amazing Rando](./src/assets/images/badge.svg)
