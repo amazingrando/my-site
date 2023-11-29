@@ -9,23 +9,8 @@ import { faAt, faSwords } from '@fortawesome/pro-solid-svg-icons';
 import Link from 'next/link';
 import { useState } from 'react';
 import classNames from 'classnames';
+import { motion } from 'framer-motion';
 import randyHead from '../assets/images/randy.png';
-
-const Destination = (value, setBg) => {
-  const { icon, label, url, bg } = value;
-  return (
-    <li>
-      <Link
-        href={url}
-        className="flex flex-row gap-2 items-center text-randyGray hover:text-blue-800 transition-colors"
-        onMouseEnter={setBg(bg || 'bg-white')}
-      >
-        <FontAwesomeIcon icon={icon} className="text-4xl" />{' '}
-        <span className="text-lg font-medium">{label}</span>
-      </Link>
-    </li>
-  );
-};
 
 export default function Home() {
   const destinations = [
@@ -82,6 +67,21 @@ export default function Home() {
     },
   };
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.25,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: '-50px' },
+    show: { opacity: 1, y: 0 },
+  };
+
   return (
     <div
       className={classNames(
@@ -98,15 +98,34 @@ export default function Home() {
         />
         <h1 className="uppercase text-2xl font-normal">Amazing Rando</h1>
       </header>
+
       <main>
-        <h1 className="text-4xl md:text-6xl font-normal">
-          Creative Director
-          <br /> Speaker
-          <br /> TTRPG gamer
-        </h1>
-        <p className="text-sm mt-4">Est. 1977</p>
+        <motion.h1
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="text-4xl md:text-6xl font-normal"
+        >
+          <motion.span variants={item} className="block">
+            Creative Director
+          </motion.span>
+          <motion.span variants={item} className="block">
+            Speaker
+          </motion.span>
+          <motion.span variants={item} className="block">
+            TTRPG gamer
+          </motion.span>
+          <motion.span variants={item} className="text-sm mt-4">
+            Est. 1977
+          </motion.span>
+        </motion.h1>
       </main>
-      <footer className="mt-auto">
+
+      <motion.footer
+        initial={{ y: '20vh' }}
+        animate={{ y: '100%', transition: { delay: 1 } }}
+        className="mt-auto"
+      >
         <ul className="flex flex-row flex-wrap md:flex-row gap-6 md:gap-10">
           {destinations.map((destination) => (
             <li key={destination.label}>
@@ -129,7 +148,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-      </footer>
+      </motion.footer>
     </div>
   );
 }
