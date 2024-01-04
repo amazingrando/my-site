@@ -64,13 +64,24 @@ const Page = ({ data }) => {
           </motion.span>
         </h1>
 
-        <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-light">
-            Because you like{' '}
-            <strong className="font-semibold">Design Systems</strong>
-          </h2>
-          <SpeakingSwiper slides={data} />
-          <ul />
+        <div>
+          <div className="flex flex-col gap-4">
+            <h2 className="text-2xl font-light">
+              Because you like{' '}
+              <strong className="font-semibold">Design Systems</strong>
+            </h2>
+            <SpeakingSwiper slides={data} />
+            <ul />
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <h2 className="text-2xl font-light">
+              Because you like{' '}
+              <strong className="font-semibold">Design Systems</strong>
+            </h2>
+            <SpeakingSwiper slides={data} />
+            <ul />
+          </div>
         </div>
       </div>
     </>

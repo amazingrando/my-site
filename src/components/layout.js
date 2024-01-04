@@ -6,7 +6,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faAt, faSwords } from '@fortawesome/pro-solid-svg-icons';
 import Link from 'next/link';
-import { useEffect, useState, useMemo } from 'react';
+import { useState } from 'react';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import Header from '@/components/header';
@@ -21,7 +21,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
     },
     {
       icon: faYoutube,
-      label: 'Talks',
+      label: 'Speaking',
       url: '/speaking',
       bg: 'bg-youtube',
     },
@@ -44,36 +44,8 @@ export default function Layout({ children, backgroundColor, textColor }) {
       bg: 'bg-ttrpg',
     },
   ];
-  const defaultBg = backgroundColor || 'bg-white';
-  const defaultText = textColor || 'text-almostBlack';
-  const [bg, setBg] = useState(defaultBg);
-  const [text, setText] = useState(defaultText);
-
-  const hoverHandler = useMemo(
-    () => ({
-      timeoutID: null,
-
-      reset() {
-        setBg(defaultBg);
-        setText(defaultText);
-      },
-
-      enter(bgValue) {
-        clearTimeout(hoverHandler.timeoutID);
-        setBg(bgValue || defaultBg);
-        setText('text-white');
-      },
-
-      leave() {
-        hoverHandler.timeoutID = setTimeout(hoverHandler.reset, 250);
-      },
-    }),
-    [defaultBg, defaultText, setBg, setText],
-  );
-
-  useEffect(() => {
-    hoverHandler.reset();
-  }, [hoverHandler]);
+  const bg = backgroundColor || 'bg-white';
+  const text = textColor || 'text-almostBlack';
 
   return (
     <div
@@ -97,13 +69,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
             <li key={destination.label}>
               <Link
                 href={destination.url}
-                className="flex flex-row gap-2 items-center hover:text-white"
-                onMouseEnter={() => {
-                  hoverHandler.enter(destination.bg);
-                }}
-                onMouseLeave={() => {
-                  hoverHandler.leave();
-                }}
+                className="flex flex-row gap-2 items-center"
               >
                 <FontAwesomeIcon
                   icon={destination.icon}
