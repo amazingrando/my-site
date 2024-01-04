@@ -2,7 +2,7 @@ import Layout from '@/components/layout';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import speakingHero from '@/assets/images/speaking/speaking-hero.png';
-import SpeakingVideo from '@/components/speakingVideo';
+import SpeakingSwiper from '@/components/speakingSwiper';
 
 const Page = ({ data }) => {
   const framerContainer = {
@@ -69,23 +69,8 @@ const Page = ({ data }) => {
             Because you like{' '}
             <strong className="font-semibold">Design Systems</strong>
           </h2>
-          <ul>
-            {data.items.map((item) => (
-              <li key={item.id}>
-                <SpeakingVideo
-                  img={
-                    item.snippet.thumbnails.maxres
-                      ? item.snippet.thumbnails.maxres.url
-                      : item.snippet.thumbnails.high.url
-                  }
-                  title={item.snippet.title}
-                  videoId={item.snippet.resourceId.videoId}
-                  organization={item.snippet.videoOwnerChannelTitle}
-                />
-                {console.log(item)}
-              </li>
-            ))}
-          </ul>
+          <SpeakingSwiper slides={data} />
+          <ul />
         </div>
       </div>
     </>

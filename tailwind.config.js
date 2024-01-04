@@ -29,7 +29,7 @@ module.exports = {
       },
       boxShadow: {
         speakingVideo:
-          '0px 4px 2px 0px rgba(255, 255, 255, 0.40) inset, 0px -4px 2px 0px rgba(0, 0, 0, 0.50) inset',
+          '0px 4px 6px -2px rgba(255, 255, 255, 0.10) inset, 0px -4px 2px 0px rgba(0, 0, 0, 0.50) inset',
       },
       fontFamily: {
         base: ['GeneralSans-Variable', 'system-ui', 'sans-serif'],
