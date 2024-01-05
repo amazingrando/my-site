@@ -6,7 +6,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faAt, faSwords } from '@fortawesome/pro-solid-svg-icons';
 import Link from 'next/link';
-import { useState } from 'react';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import Header from '@/components/header';
