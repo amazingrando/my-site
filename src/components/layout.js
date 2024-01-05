@@ -21,7 +21,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
     {
       icon: faYoutube,
       label: 'Speaking',
-      url: '/speaking',
+      url: 'https://www.youtube.com/watch?v=bt0CKVGkl-c&list=PL752rfJII3mLqPLfDIb8mYxB-kYHV3-1e',
       bg: 'bg-youtube',
     },
     {
