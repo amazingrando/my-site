@@ -38,7 +38,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
     },
     {
       icon: faSwords,
-      label: 'TTRPGs',
+      label: 'Gaming',
       url: 'https://drinkinganddragons.com/',
       bg: 'bg-ttrpg',
     },
@@ -72,7 +72,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
               >
                 <FontAwesomeIcon
                   icon={destination.icon}
-                  className="text-2xl md:text-4xl"
+                  className="text-2xl md:text-2xl"
                 />{' '}
                 <span className="text-lg font-medium">{destination.label}</span>
               </Link>
