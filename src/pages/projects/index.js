@@ -6,6 +6,7 @@ import emulsify from '@/assets/images/projects/emulsify.png';
 import podcast from '@/assets/images/projects/podcast.png';
 import wutsai from '@/assets/images/projects/wutsai.png';
 import yaleds from '@/assets/images/projects/yaleds.png';
+import nyu from '@/assets/images/projects/nyu.png';
 
 const ProjectCard = ({ title, role, description, imageSrc, url = '/' }) => (
   <article className="flex flex-row gap-8 items-center">
@@ -35,12 +36,12 @@ const projects = [
     url: '/projects/yale-ds',
   },
   {
-    title: 'Emulsify Design System for Figma and Drupal',
-    role: 'Project Lead',
+    title: 'Reinventing the public health paradigm with NYU',
+    role: 'Designer',
     description:
       'I guide the strategic vision for the project, ensuring its alignment with the evolving needs of the Drupal community.',
-    imageSrc: emulsify,
-    url: '/projects/emulsify',
+    imageSrc: nyu,
+    url: '/projects/nyu',
   },
   {
     title: 'Wu Tsai Institute lost a Webby to Spotify',
@@ -49,6 +50,14 @@ const projects = [
       'Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition.',
     imageSrc: wutsai,
     url: 'projects/wti',
+  },
+  {
+    title: 'Emulsify Design System for Figma and Drupal',
+    role: 'Project Lead',
+    description:
+      'I guide the strategic vision for the project, ensuring its alignment with the evolving needs of the Drupal community.',
+    imageSrc: emulsify,
+    url: '/projects/emulsify',
   },
   {
     title: 'Yale Cybersecurity—make boring things interesting',

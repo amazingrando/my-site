@@ -8,7 +8,10 @@ export default function Page() {
     <>
       <BackToProjects />
 
-      <PageHeader title="Emulsify" projectRole="Project Lead" />
+      <PageHeader
+        title="Emulsify Design System for Figma and Drupal"
+        projectRole="Project Lead"
+      />
 
       <div className="prose lg:prose-lg mt-44">
         <p className="lead">

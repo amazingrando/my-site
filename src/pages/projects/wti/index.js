@@ -8,7 +8,10 @@ export default function Page() {
     <>
       <BackToProjects />
 
-      <PageHeader title="WTI" projectRole="Creative Director" />
+      <PageHeader
+        title="Wu Tsai Institute lost a Webby to Spotify"
+        projectRole="Creative Director"
+      />
 
       <div className="prose lg:prose-lg mt-44">
         <p className="lead">

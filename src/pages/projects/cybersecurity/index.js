@@ -8,7 +8,10 @@ export default function Page() {
     <>
       <BackToProjects />
 
-      <PageHeader title="Cybersecurity" projectRole="Designer" />
+      <PageHeader
+        title="Yale Cybersecurity—make boring things interesting"
+        projectRole="Designer"
+      />
 
       <div className="prose lg:prose-lg mt-44">
         <p className="lead">
