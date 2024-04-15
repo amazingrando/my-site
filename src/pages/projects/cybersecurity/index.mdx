@@ -1,0 +1,40 @@
+import LayoutProject from '../../../components/layoutProject'
+
+<p className="lead">**The Yale Information Security team brought to this project the challenge of rebranding its online presence to serve the Yale community better.** The redesign significantly uplifted their messaging and usability, resulting in positive client and website user feedback. The client was thrilled with the outcome, highlighting our effective partnership in transforming their image from a regulatory authority to a supportive, engaging resource.</p>
+
+## Project Goals
+- Change reputation from a “Department of No” to a “Department of Know”
+- Inspire cyber-secure behaviors
+- Enhance clarity of content
+- Ensure accessibility for all users 
+
+## Strategy and Execution
+
+The primary objective was to reconceptualize Yale Information Security as a helpful and approachable entity. This required a strategic overhaul of the website’s aesthetic and content structure. Recognizing the need to engage a diverse university audience, we focused on making technical information accessible and compelling.
+
+## Design Process
+
+The design journey began with an innovative approach to presenting complex, technical information. We implemented a grid and section system that organizes content into digestible segments to avoid overwhelming users. This structure enhanced the visual appeal and improved the site’s navigation, making it easier for users to find relevant information quickly.
+
+**Grid and Section System:** the content was structured to guide the user through the information smoothly and efficiently by establishing a clear hierarchy and logical flow through a well-defined grid system.
+
+## Results
+
+Post-launch metrics demonstrated a marked improvement in user engagement and content accessibility. The redesigned website met the initial project goals and established a new benchmark for how educational institutions can communicate complex information effectively.
+
+## Conclusion
+
+This project is a testament to thoughtful design’s power in transforming institutional perception. By aligning Yale Information Security’s digital presence with its mission to support and educate, we achieved a resonant success that underscores our commitment to client goals and user-centric design strategies. The feedback from the Yale community has been overwhelmingly positive, validating our approach and reinforcing the client’s new position as a supportive cybersecurity partner.
+
+
+export default function MDXPage({ children }) {
+  return (
+    <LayoutProject 
+      title="Reinventing the public health paradigm with NYU" 
+      subtitle="Winner of multiple W3 Awards including Best in Show; Gold for the University category" 
+      projectRole="Designer" 
+      backLink={true}>
+        {children}
+    </LayoutProject>
+  )
+}

@@ -14,7 +14,7 @@ const LayoutProject = ({
     {title && (
       <PageHeader title={title} subtitle={subtitle} projectRole={projectRole} />
     )}
-    <div className="prose lg:prose-lg prose-headings:font-semibold mt-44">
+    <div className="prose lg:prose-lg prose-headings:font-semibold prose-strong:text-slate-600 prose-headings:text-slate-700 mt-44">
       {children}
     </div>
   </Layout>

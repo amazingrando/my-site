@@ -43,14 +43,12 @@ export default function Layout({ children, backgroundColor, textColor }) {
       bg: 'bg-ttrpg',
     },
   ];
-  const bg = backgroundColor || 'bg-white';
-  const text = textColor || 'text-almostBlack';
+  const text = textColor || 'text-slate-700';
 
   return (
     <div
       className={classNames(
         'flex min-h-[100dvh] flex-col p-8 md:p-24 gap-[10vh] transition-colors',
-        bg,
         text,
       )}
     >

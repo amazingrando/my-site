@@ -39,7 +39,7 @@ const projects = [
     title: 'Reinventing the public health paradigm with NYU',
     role: 'Designer',
     description:
-      'I guide the strategic vision for the project, ensuring its alignment with the evolving needs of the Drupal community.',
+      'This website redesign revolutionized the digital footprint of the school, capturing its vibrant energy while enhancing the user experience.',
     imageSrc: nyu,
     url: '/projects/nyu',
   },
