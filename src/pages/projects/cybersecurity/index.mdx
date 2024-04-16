@@ -30,10 +30,14 @@ This project is a testament to thoughtful design’s power in transforming insti
 export default function MDXPage({ children }) {
   return (
     <LayoutProject 
-      title="Reinventing the public health paradigm with NYU" 
-      subtitle="Winner of multiple W3 Awards including Best in Show; Gold for the University category" 
+      title="Yale Cybersecurity—make boring things interesting" 
+      subtitle="Making a department of NO into a department of KNOW." 
       projectRole="Designer" 
-      backLink={true}>
+      backLink={true}
+      links={[
+        { text: "Yale Cybersecurity", url: "https://cybersecurity.yale.edu/" },
+      ]}
+      >
         {children}
     </LayoutProject>
   )

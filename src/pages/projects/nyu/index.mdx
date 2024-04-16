@@ -43,7 +43,11 @@ export default function MDXPage({ children }) {
       title="Reinventing the public health paradigm with NYU" 
       subtitle="Winner of multiple W3 Awards including Best in Show; Gold for the University category" 
       projectRole="Designer" 
-      backLink={true}>
+      backLink={true}
+      links={[
+        { text: "NYU School of Global Public Health", url: "https://publichealth.nyu.edu/" },
+      ]}
+      >
         {children}
     </LayoutProject>
   )

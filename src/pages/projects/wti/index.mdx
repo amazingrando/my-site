@@ -27,7 +27,11 @@ export default function MDXPage({ children }) {
       title="Wu Tsai Institute lost a Webby to Spotify" 
       subtitle="Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition." 
       projectRole="Creative Director" 
-      backLink={true}>
+      backLink={true}
+      links={[
+        { text: "Wu Tsai Institute at Yale University", url: "https://wti.yale.edu/" },
+      ]}
+      >
         {children}
     </LayoutProject>
   )

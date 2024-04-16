@@ -1,0 +1,22 @@
+import LayoutProject from '../../../components/layoutProject'
+
+<p className="lead">**Step into a world where design does more than look good—it does good.** Welcome to “Design in Good Company,” the podcast presented by the creative team at Four Kitchens, a values-based digital agency dedicated to creating meaningful digital experiences. Join us as we delve into the fascinating intersection of creativity, community, and values, exploring how they shape the digital landscape.</p>
+
+
+In each episode of “Design in Good Company,” we invite you to join insightful and inspiring conversations. Whether we’re discussing the nuances of UX design, the intricacies of content strategy, or the ethical dimensions of new technologies, this podcast is your gateway to understanding how deep-rooted values can influence and drive creative innovation. But it’s not just about theory. From dissecting the latest trends in UX to offering practical advice on how to make your resume pop, our episodes are packed with actionable insights and thoughtful discussions that you can apply to your work immediately.
+
+But “Design in Good Company” is more than just a podcast—it’s a community. We encourage our listeners to extend these conversations beyond the airwaves by joining our LinkedIn group. There, you can connect with other like-minded professionals, share your thoughts, and engage in lively discussions about everything we cover on the podcast. It’s a place to network, learn, and grow together as we navigate the ever-evolving world of digital design.
+
+Whether you’re a seasoned designer, a digital marketing strategist, or just someone passionate about how technology can serve the greater good, “Design in Good Company” has something for you. Subscribe today and become part of a community where creativity meets purpose and every design decision is an opportunity to make a positive impact. Join us—we’re not just about creating great designs but about making designs that do great things.
+
+export default function MDXPage({ children }) {
+  return (
+    <LayoutProject 
+      title="Design in Good Company podcast" 
+      subtitle="Launching in April 2024" 
+      projectRole="Host" 
+      backLink={true}>
+        {children}
+    </LayoutProject>
+  )
+}
