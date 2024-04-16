@@ -1,4 +1,8 @@
 import LayoutProject from '../../../components/layoutProject'
+import ScreenShot from '../../../components/screenshot'
+import nyuHome from '../../../assets/images/projects/nyu-home.png'
+import nyuLP from '../../../assets/images/projects/nyu-lp.png'
+
 
 <p className="lead">**In a pioneering project during a transformative period, the NYU School of Global Public Health (GPH) embarked on a mission to revolutionize its digital footprint.** This venture was a website redesign and a comprehensive reimagination of how their ethos and dynamism could be encapsulated and communicated online. The result was a digital platform showcasing the school's vibrant energy and multi-disciplinary approach, significantly enhancing the user experience.</p>
 
@@ -9,6 +13,9 @@ import LayoutProject from '../../../components/layoutProject'
 - **Growth and Recognition**: Post-launch, GPH experienced remarkable growth, nearly doubling in size and securing a prestigious spot among the Top 20 Best Grad Schools in Public Health, as ranked by US News & World Report in 2023. The redesigned site was crucial in attracting high-caliber students and faculty, contributing to the college's rising prominence.
 
 - **Innovative Design and Strategy**: A component-driven design process underpinned the project's success, allowing for flexible content creation within a coherent system. Large, powerful images and bold typography became the hallmarks of GPH's new digital identity, supported by a steady stream of high-quality photography and video content.
+
+<ScreenShot src={nyuHome} title="NYU Home page" />
+<ScreenShot src={nyuLP} title="NYU Programs" />
 
 ## The Client
 
@@ -39,16 +46,16 @@ The NYU GPH website redesign is a testament to the power of visionary leadership
 
 export default function MDXPage({ children }) {
   return (
-    <LayoutProject 
-      title="Reinventing the public health paradigm with NYU" 
-      subtitle="Winner of multiple W3 Awards including Best in Show; Gold for the University category" 
-      projectRole="Designer" 
+    <LayoutProject
+      title="Reinventing the public health paradigm with NYU"
+      subtitle="Winner of multiple W3 Awards including Best in Show; Gold for the University category"
+      projectRole="Designer"
       backLink={true}
       links={[
         { text: "NYU School of Global Public Health", url: "https://publichealth.nyu.edu/" },
       ]}
-      >
-        {children}
+    >
+      {children}
     </LayoutProject>
   )
 }

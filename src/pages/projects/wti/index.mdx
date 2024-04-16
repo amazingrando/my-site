@@ -1,4 +1,7 @@
 import LayoutProject from '../../../components/layoutProject'
+import ScreenShot from '../../../components/screenshot'
+import wtiProfile from '../../../assets/images/projects/wti-profile.png'
+import wtiPrograms from '../../../assets/images/projects/wti-programs.png'
 
 <p className="lead">**In a pioneering effort to match the ambitious goals of the Wu Tsai Institute at Yale, a newly established research hub dedicated to exploring the intricacies of the human brain, our task was to create an equally ambitious digital presence.** This project culminated in a state-of-the-art website that received critical acclaim and earned nominations for two prestigious Webbys: Best School/University Site and Best Mobile Visual Design - Aesthetic. Competing against heavyweights like Spotify’s Wrapped, the recognition highlighted our innovative approach and the stunning visual identity we crafted for the institute.</p>
 
@@ -16,6 +19,9 @@ Given the institute’s focus on a “big bet” on brain research, they desired
 
 The design phase presented unique challenges, mainly because the visual identity needed to be established well ahead of the site’s textual content. This was partly due to the institute’s director expecting a child and prioritizing establishing a robust visual identity early in the project. The delay in content readiness pushed our team to adapt and innovate, ensuring that the visual elements could stand alone as powerful representations of the institute’s brand until final content was integrated just weeks before the launch.
 
+<ScreenShot src={wtiProfile} title="Wu Tsai Institute profile exploration" />
+<ScreenShot src={wtiPrograms} title="Wu Tsai Institute programs exploration" />
+
 ## Conclusion
 
 The Wu Tsai Institute website project was a testament to the ability to create visually stunning digital experiences and an example of how adaptive and client-focused design can lead to acclaimed results. Despite the challenges and high expectations, the project was a resounding success, laying a digital foundation reflecting the institute’s groundbreaking research and ambitious vision for more than a century.
@@ -23,16 +29,16 @@ The Wu Tsai Institute website project was a testament to the ability to create v
 
 export default function MDXPage({ children }) {
   return (
-    <LayoutProject 
-      title="Wu Tsai Institute lost a Webby to Spotify" 
-      subtitle="Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition." 
-      projectRole="Creative Director" 
+    <LayoutProject
+      title="Wu Tsai Institute lost a Webby to Spotify"
+      subtitle="Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition."
+      projectRole="Creative Director"
       backLink={true}
       links={[
         { text: "Wu Tsai Institute at Yale University", url: "https://wti.yale.edu/" },
       ]}
-      >
-        {children}
+    >
+      {children}
     </LayoutProject>
   )
 }
