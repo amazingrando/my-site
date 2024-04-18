@@ -48,7 +48,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
   return (
     <div
       className={classNames(
-        'flex min-h-[100dvh] flex-col p-8 md:p-24 gap-[10vh] transition-colors',
+        'flex min-h-[100dvh] flex-col p-8 md:p-24 gap-[5vh] md:gap-[10vh] transition-colors',
         text,
       )}
     >
@@ -58,10 +58,16 @@ export default function Layout({ children, backgroundColor, textColor }) {
 
       <motion.footer
         initial={{ y: '20vh' }}
-        animate={{ y: '100%', transition: { delay: 1 } }}
+        animate={{ y: '0', transition: { delay: 1 } }}
         className="mt-auto"
       >
-        <ul className="flex flex-row flex-wrap md:flex-row gap-6 md:gap-10">
+        <ul
+          className={classNames(
+            'w-max grid grid-cols-2 gap-x-8 gap-y-3',
+            'md:grid-cols-3',
+            'lg:flex lg:flex-row lg:gap-x-8',
+          )}
+        >
           {destinations.map((destination) => (
             <li key={destination.label}>
               <Link

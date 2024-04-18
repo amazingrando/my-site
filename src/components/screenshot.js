@@ -6,7 +6,7 @@ const ScreenshotPlayer = ({ title, src }) => (
     className={classNames(
       'p-2 pt-0 bg-slate-200 rounded',
       'border border-slate-400 border-solid',
-      'lg:w-[150%]',
+      'md:w-[90vw] md:-ml-[5vw] lg:w-[80vw] lg:-ml-[2vw] max-w-[1100px]',
     )}
   >
     <div className="!m-0 relative text-center">

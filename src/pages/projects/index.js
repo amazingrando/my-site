@@ -5,51 +5,67 @@ import cyber from '@/assets/images/projects/cyber.png';
 import emulsify from '@/assets/images/projects/emulsify.png';
 import podcast from '@/assets/images/projects/podcast.png';
 import wutsai from '@/assets/images/projects/wutsai.png';
-import yaleds from '@/assets/images/projects/yaleds.png';
+// import yaleds from '@/assets/images/projects/yaleds.png';
 import nyu from '@/assets/images/projects/nyu.png';
+import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/pro-regular-svg-icons';
 
-const ProjectCard = ({ title, role, description, imageSrc, url = '/' }) => (
-  <article className="flex flex-row gap-8 items-center">
-    <Link href={url} className="shrink-0 grow-0 basis-[200px]">
-      <Image src={imageSrc} alt={title} className="max-w-[200px] w-full" />
+const ProjectCard = ({
+  title,
+  role,
+  description,
+  imageSrc,
+  url = '/',
+  variants,
+}) => (
+  <motion.article
+    className="md:flex md:flex-row md:gap-8 items-start"
+    variants={variants}
+  >
+    <Link
+      href={url}
+      className="md:shrink-0 md:grow-0 md:basis-[150px] float-end md:float-none"
+    >
+      <Image
+        src={imageSrc}
+        alt={title}
+        className="max-w-[100px] w-[100px] md:max-w-[150px] md:w-full"
+      />
     </Link>
 
     <div>
-      <h2 className="text-2xl font-semibold mb-2 leading-tight text-balance">
-        <Link href={url} className="transition-all hover:text-sky-600">
-          {title}
+      <h2 className="text-2xl font-semibold mb-2 leading-tight text-balance group">
+        <Link href={url} className="transition-all group-hover:text-sky-600">
+          {title}{' '}
+          <FontAwesomeIcon
+            icon={faArrowRightLong}
+            className="text-xl transition-all group-hover:ml-2 group-hover:text-sky-600"
+          />
         </Link>
       </h2>
       <p className="text-sm text-slate-600">Role: {role}</p>
       <p className="mt-8">{description}</p>
     </div>
-  </article>
+  </motion.article>
 );
 
 const projects = [
+  // {
+  //   title: "Yale's first design system",
+  //   role: 'Creative Director',
+  //   description:
+  //     'Led the design team to create Yale’s first digital design system, which is used on all new websites.',
+  //   imageSrc: yaleds,
+  //   url: '/projects/yale-ds',
+  // },
   {
-    title: "Yale's first design system",
-    role: 'Creative Director',
+    title: 'Design in Good Company podcast',
+    role: 'Host',
     description:
-      'Led the design team to create Yale’s first digital design system, which is used on all new websites.',
-    imageSrc: yaleds,
-    url: '/projects/yale-ds',
-  },
-  {
-    title: 'Reinventing the public health paradigm with NYU',
-    role: 'Designer',
-    description:
-      'This website redesign revolutionized the digital footprint of the school, capturing its vibrant energy while enhancing the user experience.',
-    imageSrc: nyu,
-    url: '/projects/nyu',
-  },
-  {
-    title: 'Wu Tsai Institute lost a Webby to Spotify',
-    role: 'Creative Director',
-    description:
-      'Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition.',
-    imageSrc: wutsai,
-    url: 'projects/wti',
+      'Coming soon! A podcast about design, leadership, and the power of community.',
+    imageSrc: podcast,
+    url: 'projects/podcast',
   },
   {
     title: 'Emulsify Design System for Figma and Drupal',
@@ -60,6 +76,22 @@ const projects = [
     url: '/projects/emulsify',
   },
   {
+    title: 'Wu Tsai Institute lost a Webby to Spotify',
+    role: 'Creative Director',
+    description:
+      'Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition.',
+    imageSrc: wutsai,
+    url: 'projects/wti',
+  },
+  {
+    title: 'Reinventing the public health paradigm with NYU',
+    role: 'Designer',
+    description:
+      'This website redesign revolutionized the digital footprint of the school, capturing its vibrant energy while enhancing the user experience.',
+    imageSrc: nyu,
+    url: '/projects/nyu',
+  },
+  {
     title: 'Yale Cybersecurity—make boring things interesting',
     role: 'Designer',
     description:
@@ -67,14 +99,7 @@ const projects = [
     imageSrc: cyber,
     url: 'projects/cybersecurity',
   },
-  {
-    title: 'Design in Good Company podcast',
-    role: 'Host',
-    description:
-      'Coming soon! A podcast about design, leadership, and the power of community.',
-    imageSrc: podcast,
-    url: 'projects/podcast',
-  },
+
   // {
   //   title: 'Decoupled Days 2022 organizer',
   //   role: 'Organizer',
@@ -91,14 +116,19 @@ const projects = [
 ];
 
 export default function Projects() {
-  const container = {
+  const projectsContainer = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.25,
+        staggerChildren: 0.125,
       },
     },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: '-50px' },
+    show: { opacity: 1, x: 0 },
   };
 
   return (
@@ -107,11 +137,16 @@ export default function Projects() {
         <span className="block">Projects</span>
       </h1>
 
-      <section className="grid grid-cols-2 gap-24 mb-24">
+      <motion.section
+        className="grid grid-cols-1 lg:grid-cols-2 gap-24 mb-24"
+        variants={projectsContainer}
+        initial="hidden"
+        animate="show"
+      >
         {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
+          <ProjectCard key={project.title} {...project} variants={item} />
         ))}
-      </section>
+      </motion.section>
     </>
   );
 }
