@@ -8,14 +8,19 @@ const LayoutProject = ({
   subtitle,
   projectRole,
   backLink,
-  links
+  links,
 }) => (
   <Layout>
     {backLink && <BackToProjects />}
     {title && (
-      <PageHeader title={title} subtitle={subtitle} projectRole={projectRole} links={links} />
+      <PageHeader
+        title={title}
+        subtitle={subtitle}
+        projectRole={projectRole}
+        links={links}
+      />
     )}
-    <div className="prose lg:prose-lg prose-headings:font-semibold prose-strong:text-slate-600 prose-headings:text-slate-700 mt-44">
+    <div className="prose lg:prose-lg prose-headings:font-semibold prose-strong:text-slate-600 prose-headings:text-slate-700 prose-li:marker:text-slate-600 mt-44">
       {children}
     </div>
   </Layout>

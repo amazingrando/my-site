@@ -1,4 +1,10 @@
 import LayoutProject from '../../../components/layoutProject'
+import ScreenShot from '../../../components/screenshot'
+import homepageImage from '../../../assets/images/projects/cyber-homepage.png';
+import riskImage from '../../../assets/images/projects/cyber-risk.png';
+import clickImage from '../../../assets/images/projects/cyber-click.png';
+import passwordsImage from '../../../assets/images/projects/cyber-passwords.png';
+import guideImage from '../../../assets/images/projects/cyber-guide.png';
 
 <p className="lead">**The Yale Information Security team brought to this project the challenge of rebranding its online presence to serve the Yale community better.** The redesign significantly uplifted their messaging and usability, resulting in positive client and website user feedback. The client was thrilled with the outcome, highlighting our effective partnership in transforming their image from a regulatory authority to a supportive, engaging resource.</p>
 
@@ -7,6 +13,12 @@ import LayoutProject from '../../../components/layoutProject'
 - Inspire cyber-secure behaviors
 - Enhance clarity of content
 - Ensure accessibility for all users 
+
+<ScreenShot src={homepageImage} title="Yale Cybersecurity Homepage"/>
+<ScreenShot src={riskImage} title="Yale Cybersecurity Know Your Risk"/>
+<ScreenShot src={clickImage} title="Yale Cybersecurity Click with Caution"/>
+<ScreenShot src={passwordsImage} title="Yale Cybersecurity Use Secure Passwords"/>
+<ScreenShot src={guideImage} title="Yale Cybersecurity Guide Mockup"/>
 
 ## Strategy and Execution
 
@@ -29,16 +41,16 @@ This project is a testament to thoughtful design’s power in transforming insti
 
 export default function MDXPage({ children }) {
   return (
-    <LayoutProject 
-      title="Yale Cybersecurity—make boring things interesting" 
-      subtitle="Making a department of NO into a department of KNOW." 
-      projectRole="Designer" 
+    <LayoutProject
+      title="Yale Cybersecurity—make boring things interesting"
+      subtitle="Making a department of NO into a department of KNOW."
+      projectRole="Designer"
       backLink={true}
       links={[
         { text: "Yale Cybersecurity", url: "https://cybersecurity.yale.edu/" },
       ]}
-      >
-        {children}
+    >
+      {children}
     </LayoutProject>
   )
 }

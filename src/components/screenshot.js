@@ -10,8 +10,10 @@ const ScreenshotPlayer = ({ title, src }) => (
     )}
   >
     <div className="!m-0 relative text-center">
-      <span className="tracking-[.2em] absolute left-0 top-0">🔴🟡🟢</span>
-      <span className="text-slate-700 font-bold text-sm uppercase">
+      <span className="hidden tracking-[.2em] absolute left-0 top-1 text-xs md:text-base">
+        🔴🟡🟢
+      </span>
+      <span className="text-slate-700 font-bold text-sm uppercase leading-none block py-2">
         {title}
       </span>
     </div>
