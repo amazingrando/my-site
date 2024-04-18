@@ -5,6 +5,9 @@ import cyber from '@/assets/images/projects/cyber.png';
 import emulsify from '@/assets/images/projects/emulsify.png';
 import podcast from '@/assets/images/projects/podcast.png';
 import wutsai from '@/assets/images/projects/wutsai.png';
+import bitd from '@/assets/images/projects/bitd.png';
+import bnm from '@/assets/images/projects/bnm.png';
+import fate from '@/assets/images/projects/fate.png';
 // import yaleds from '@/assets/images/projects/yaleds.png';
 import nyu from '@/assets/images/projects/nyu.png';
 import { motion } from 'framer-motion';
@@ -18,6 +21,7 @@ const ProjectCard = ({
   imageSrc,
   url = '/',
   variants,
+  size,
 }) => (
   <motion.article
     className="md:flex md:flex-row md:gap-8 items-start"
@@ -115,6 +119,35 @@ const projects = [
   // },
 ];
 
+const smallerProjects = [
+  {
+    title: 'Fate SRD, a digital rules reference for the Fate RPG',
+    role: 'Owner',
+    description:
+      'Won a silver ENNIE for Best Website in 2014. The site is used by thousands of players and GMs every month.',
+    imageSrc: fate,
+    url: 'https://fate-srd.com/',
+  },
+  {
+    title:
+      'Blades in the Dark SRD, a digital rules reference for the Blades in the Dark RPG',
+    role: 'Owner',
+    description:
+      'Won a gold ENNIE for Best Website in 2018. The site is used by thousands of players and GMs every month.',
+    imageSrc: bitd,
+    url: 'https://bladesinthedark.com/',
+  },
+  {
+    title:
+      'Bits and Mortar, supporting local game stores with digital downloads',
+    role: 'Designer and developer',
+    description:
+      'Bringing the physical and digital worlds together so people can support their Friendly Local Gaming Store while keeping up-to-date with their digital collection.',
+    imageSrc: bnm,
+    url: 'https://www.bits-and-mortar.com/',
+  },
+];
+
 export default function Projects() {
   const projectsContainer = {
     hidden: { opacity: 0 },
@@ -147,6 +180,13 @@ export default function Projects() {
           <ProjectCard key={project.title} {...project} variants={item} />
         ))}
       </motion.section>
+
+      <h2 className="text-2xl font-semibold mb-8">Other projects</h2>
+      <section className="grid grid-cols-1 gap-16 max-w-[700px]">
+        {smallerProjects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </section>
     </>
   );
 }
