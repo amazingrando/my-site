@@ -21,7 +21,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
     {
       icon: faYoutube,
       label: 'Speaking',
-      url: 'https://www.youtube.com/watch?v=bt0CKVGkl-c&list=PL752rfJII3mLqPLfDIb8mYxB-kYHV3-1e',
+      url: 'https://www.youtube.com/playlist?list=PL752rfJII3mLqPLfDIb8mYxB-kYHV3-1e',
       bg: 'bg-youtube',
     },
     {
@@ -38,19 +38,17 @@ export default function Layout({ children, backgroundColor, textColor }) {
     },
     {
       icon: faSwords,
-      label: 'TTRPGs',
+      label: 'Gaming',
       url: 'https://drinkinganddragons.com/',
       bg: 'bg-ttrpg',
     },
   ];
-  const bg = backgroundColor || 'bg-white';
-  const text = textColor || 'text-almostBlack';
+  const text = textColor || 'text-slate-700';
 
   return (
     <div
       className={classNames(
-        'flex min-h-[100dvh] flex-col p-8 md:p-24 gap-[10vh] transition-colors',
-        bg,
+        'flex min-h-[100dvh] flex-col p-8 md:p-24 gap-[5vh] md:gap-[10vh] transition-colors',
         text,
       )}
     >
@@ -60,10 +58,16 @@ export default function Layout({ children, backgroundColor, textColor }) {
 
       <motion.footer
         initial={{ y: '20vh' }}
-        animate={{ y: '100%', transition: { delay: 1 } }}
+        animate={{ y: '0', transition: { delay: 1 } }}
         className="mt-auto"
       >
-        <ul className="flex flex-row flex-wrap md:flex-row gap-6 md:gap-10">
+        <ul
+          className={classNames(
+            'w-max grid grid-cols-2 gap-x-8 gap-y-3',
+            'md:grid-cols-3',
+            'lg:flex lg:flex-row lg:gap-x-8',
+          )}
+        >
           {destinations.map((destination) => (
             <li key={destination.label}>
               <Link
@@ -72,7 +76,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
               >
                 <FontAwesomeIcon
                   icon={destination.icon}
-                  className="text-2xl md:text-4xl"
+                  className="text-2xl md:text-2xl"
                 />{' '}
                 <span className="text-lg font-medium">{destination.label}</span>
               </Link>

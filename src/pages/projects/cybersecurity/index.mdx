@@ -1,0 +1,56 @@
+import LayoutProject from '../../../components/layoutProject'
+import ScreenShot from '../../../components/screenshot'
+import homepageImage from '../../../assets/images/projects/cyber-homepage.png';
+import riskImage from '../../../assets/images/projects/cyber-risk.png';
+import clickImage from '../../../assets/images/projects/cyber-click.png';
+import passwordsImage from '../../../assets/images/projects/cyber-passwords.png';
+import guideImage from '../../../assets/images/projects/cyber-guide.png';
+
+<p className="lead">**The Yale Information Security team brought to this project the challenge of rebranding its online presence to serve the Yale community better.** The redesign significantly uplifted their messaging and usability, resulting in positive client and website user feedback. The client was thrilled with the outcome, highlighting our effective partnership in transforming their image from a regulatory authority to a supportive, engaging resource.</p>
+
+## Project Goals
+- Change reputation from a “Department of No” to a “Department of Know”
+- Inspire cyber-secure behaviors
+- Enhance clarity of content
+- Ensure accessibility for all users 
+
+<ScreenShot src={homepageImage} title="Yale Cybersecurity Homepage"/>
+<ScreenShot src={riskImage} title="Yale Cybersecurity Know Your Risk"/>
+<ScreenShot src={clickImage} title="Yale Cybersecurity Click with Caution"/>
+<ScreenShot src={passwordsImage} title="Yale Cybersecurity Use Secure Passwords"/>
+<ScreenShot src={guideImage} title="Yale Cybersecurity Guide Mockup"/>
+
+## Strategy and Execution
+
+The primary objective was to reconceptualize Yale Information Security as a helpful and approachable entity. This required a strategic overhaul of the website’s aesthetic and content structure. Recognizing the need to engage a diverse university audience, we focused on making technical information accessible and compelling.
+
+## Design Process
+
+The design journey began with an innovative approach to presenting complex, technical information. We implemented a grid and section system that organizes content into digestible segments to avoid overwhelming users. This structure enhanced the visual appeal and improved the site’s navigation, making it easier for users to find relevant information quickly.
+
+**Grid and Section System:** the content was structured to guide the user through the information smoothly and efficiently by establishing a clear hierarchy and logical flow through a well-defined grid system.
+
+## Results
+
+Post-launch metrics demonstrated a marked improvement in user engagement and content accessibility. The redesigned website met the initial project goals and established a new benchmark for how educational institutions can communicate complex information effectively.
+
+## Conclusion
+
+This project is a testament to thoughtful design’s power in transforming institutional perception. By aligning Yale Information Security’s digital presence with its mission to support and educate, we achieved a resonant success that underscores our commitment to client goals and user-centric design strategies. The feedback from the Yale community has been overwhelmingly positive, validating our approach and reinforcing the client’s new position as a supportive cybersecurity partner.
+
+
+export default function MDXPage({ children }) {
+  return (
+    <LayoutProject
+      title="Yale Cybersecurity—make boring things interesting"
+      subtitle="Making a department of NO into a department of KNOW."
+      projectRole="Designer"
+      backLink={true}
+      links={[
+        { text: "Yale Cybersecurity", url: "https://cybersecurity.yale.edu/" },
+      ]}
+    >
+      {children}
+    </LayoutProject>
+  )
+}
