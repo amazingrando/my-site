@@ -1,0 +1,25 @@
+import LayoutPage from '../../components/layoutPage'
+
+<p className="lead">Over the years I’ve grown to understand myself better, and a few years ago I started to write down my personal principles.</p>
+
+- Efficiency through laziness
+- Assume positive intent
+- The only real apology is corrected behavior.
+- You can’t control your emotions but you can control your actions.
+- Wit is the salt of the conversation, not the food
+- Every time someone steps up and says who they are, the world becomes a better, more interesting place.
+- Better an oops than a what if.
+- Better a horrible end than unending horror.
+- Tolerate failure, not incompetence.
+
+
+export default function MDXPage({ children }) {
+  return (
+    <LayoutPage
+      title="Principles"
+      subtitle="If you don't know what you stand for, you'll fall for anything."
+    >
+      {children}
+    </LayoutPage>
+  )
+}
