@@ -71,6 +71,15 @@ export default function Home() {
               <FontAwesomeIcon icon={faArrowRightLong} />
             </Link>
           </li>
+          <li>
+            <Link
+              href="principles"
+              className="hover:text-sky-600 flex flex-row items-center gap-2 transition-all hover:gap-3"
+            >
+              Principles
+              <FontAwesomeIcon icon={faArrowRightLong} />
+            </Link>
+          </li>
         </ul>
       </motion.nav>
     </>
