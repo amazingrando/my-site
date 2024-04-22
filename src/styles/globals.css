@@ -6,7 +6,7 @@
 
 body {
   @apply bg-slate-100;
-  background-image: radial-gradient(theme('colors.slate.400') 1px, transparent 0); 
+  background-image: radial-gradient(theme('colors.slate.300') 1px, transparent 0); 
   background-size: 30px 30px;
   background-position: -19px -19px;
 }
