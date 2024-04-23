@@ -60,6 +60,7 @@ export default function Layout({ children, pageTitle }) {
           content={pageTitle || 'Amazing Rando'}
           key="title"
         />
+        <meta property="og:image" content="/sharing.png" />
       </Head>
 
       <Header />
