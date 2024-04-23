@@ -67,7 +67,7 @@ const projects = [
     title: 'Design in Good Company podcast',
     role: 'Host',
     description:
-      'Coming soon! A podcast about design, leadership, and the power of community.',
+      'A podcast about design, leadership, and the power of community.',
     imageSrc: podcast,
     url: 'projects/podcast',
   },

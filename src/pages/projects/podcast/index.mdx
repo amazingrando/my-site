@@ -4,19 +4,37 @@ import Image from 'next/image';
 
 <p className="lead">**Step into a world where design does more than look good—it does good.** Welcome to “Design in Good Company,” the podcast presented by the creative team at Four Kitchens, a values-based digital agency dedicated to creating meaningful digital experiences. Join us as we delve into the fascinating intersection of creativity, community, and values, exploring how they shape the digital landscape.</p>
 
-<Image src={podcastCover} alt="Design in Good Company podcast cover" className='max-w-[250px] float-right m-4 !mt-0' /> In each episode of “Design in Good Company,” we invite you to join insightful and inspiring conversations. Whether we’re discussing the nuances of UX design, the intricacies of content strategy, or the ethical dimensions of new technologies, this podcast is your gateway to understanding how deep-rooted values can influence and drive creative innovation. But it’s not just about theory. From dissecting the latest trends in UX to offering practical advice on how to make your resume pop, our episodes are packed with actionable insights and thoughtful discussions that you can apply to your work immediately.
+<Image src={podcastCover} alt="Design in Good Company podcast cover" className='max-w-[250px] float-right m-4 !mt-0' /> I believe that the best work gets done when we work together. Shared values and diverse perspectives improve our odds at succeeding at anything. Real success. Meaningful success.
 
-But “Design in Good Company” is more than just a podcast—it’s a community. We encourage our listeners to extend these conversations beyond the airwaves by joining our LinkedIn group. There, you can connect with other like-minded professionals, share your thoughts, and engage in lively discussions about everything we cover on the podcast. It’s a place to network, learn, and grow together as we navigate the ever-evolving world of digital design.
+One of my personal goals in life is to make the world a better place, in small and large ways. (It is terrible as a KPI, but it is great as a guiding principle.)
 
-Whether you’re a seasoned designer, a digital marketing strategist, or just someone passionate about how technology can serve the greater good, “Design in Good Company” has something for you. Subscribe today and become part of a community where creativity meets purpose and every design decision is an opportunity to make a positive impact. Join us—we’re not just about creating great designs but about making designs that do great things.
+I’m taking a big step towards this goal today. I using my role as Creative Director at a great values-based agency— Four Kitchens — to promote discussions about creativity, community, and values.
+
+Today, the podcast “Design in Good Company” is born. You can find it in the usual places you get podcasts.
+
+It is already a community effort.
+
+My cohost, Brodrick Lothringer, and his team at Pod Pony, knows how to produce a podcast. Their feedback and guidance have helped me grow quickly from loud host to a loud and interesting host.
+
+And you. You’re part of this community too.
+
+I’d like you to join our discussions.
+
+We are kicking things off with a LinkedIn group.
+
+Join us.
 
 export default function MDXPage({ children }) {
   return (
     <LayoutProject
       title="Design in Good Company podcast"
-      subtitle="Launching in April 2024"
       projectRole="Host"
-      backLink={true}>
+      backLink={true}
+      links={[
+        { text: "Apple Podcasts", url: "https://podcasts.apple.com/us/podcast/design-in-good-company/id1741974684" },
+        { text: "Spotify", url: "https://open.spotify.com/show/5z9oaV1GOIe4PBDM3NhATK?si=lPT55lU_S9yQHjKjFxHS6A" },
+        { text: "Design in Good Company Community", url: "https://www.linkedin.com/groups/13009894" },
+      ]}>
       {children}
     </LayoutProject>
   )
