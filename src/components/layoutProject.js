@@ -10,7 +10,7 @@ const LayoutProject = ({
   backLink,
   links,
 }) => (
-  <Layout>
+  <Layout pageTitle={title}>
     {backLink && <BackToProjects />}
     {title && (
       <PageHeader

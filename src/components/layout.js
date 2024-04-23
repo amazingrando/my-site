@@ -9,8 +9,9 @@ import Link from 'next/link';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import Header from '@/components/header';
+import Head from 'next/head';
 
-export default function Layout({ children, backgroundColor, textColor }) {
+export default function Layout({ children, pageTitle }) {
   const destinations = [
     {
       icon: faLinkedin,
@@ -43,7 +44,7 @@ export default function Layout({ children, backgroundColor, textColor }) {
       bg: 'bg-ttrpg',
     },
   ];
-  const text = textColor || 'text-slate-700';
+  const text = 'text-slate-700';
 
   return (
     <div
@@ -52,6 +53,15 @@ export default function Layout({ children, backgroundColor, textColor }) {
         text,
       )}
     >
+      <Head>
+        <title>{pageTitle || 'Amazing Rando'}</title>
+        <meta
+          property="og:title"
+          content={pageTitle || 'Amazing Rando'}
+          key="title"
+        />
+      </Head>
+
       <Header />
 
       <main>{children}</main>

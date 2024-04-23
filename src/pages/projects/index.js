@@ -192,5 +192,5 @@ export default function Projects() {
 }
 
 Projects.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout pageTitle="Projects">{page}</Layout>;
 };
