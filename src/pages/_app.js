@@ -9,13 +9,15 @@ export default function App({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page);
 
+  console.log(process.env.NEXT_PUBLIC_FATHOM_ID, 'process.env.FATHOM_ID');
+
   useEffect(() => {
     // Initialize Fathom when the app loads
     // Example: yourdomain.com
     //  - Do not include https://
     //  - This must be an exact match of your domain.
     //  - If you're using www. for your domain, make sure you include that here.
-    Fathom.load(process.env.FATHOM_ID, {
+    Fathom.load(process.env.NEXT_PUBLIC_FATHOM_ID, {
       includedDomains: ['amazingrando.com'],
     });
 
@@ -29,7 +31,7 @@ export default function App({ Component, pageProps }) {
     return () => {
       router.events.off('routeChangeComplete', onRouteChangeComplete);
     };
-  }, []);
+  }, [router.events]);
 
   return getLayout(<Component {...pageProps} />);
 }
