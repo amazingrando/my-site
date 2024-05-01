@@ -18,7 +18,7 @@ const ScreenshotPlayer = ({ title, src }) => (
       </span>
     </div>
     <div className="max-h-[70dvh] overflow-y-scroll">
-      <Image src={src} alt={title} className="!m-0" />
+      <Image src={src} alt={title} className="!m-0 w-full" />
     </div>
   </figure>
 );

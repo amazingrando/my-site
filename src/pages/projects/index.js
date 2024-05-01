@@ -8,7 +8,7 @@ import wutsai from '@/assets/images/projects/wutsai.png';
 import bitd from '@/assets/images/projects/bitd.png';
 import bnm from '@/assets/images/projects/bnm.png';
 import fate from '@/assets/images/projects/fate.png';
-// import yaleds from '@/assets/images/projects/yaleds.png';
+import yaleds from '@/assets/images/projects/yaleds.png';
 import nyu from '@/assets/images/projects/nyu.png';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -55,14 +55,14 @@ const ProjectCard = ({
 );
 
 const projects = [
-  // {
-  //   title: "Yale's first design system",
-  //   role: 'Creative Director',
-  //   description:
-  //     'Led the design team to create Yale’s first digital design system, which is used on all new websites.',
-  //   imageSrc: yaleds,
-  //   url: '/projects/yale-ds',
-  // },
+  {
+    title: "Yale's first design system",
+    role: 'Creative Director',
+    description:
+      'Led the design team to create Yale’s first digital design system, which is used on all new websites.',
+    imageSrc: yaleds,
+    url: '/projects/yale-ds',
+  },
   {
     title: 'Design in Good Company podcast',
     role: 'Host',
@@ -181,7 +181,7 @@ export default function Projects() {
         ))}
       </motion.section>
 
-      <h2 className="text-2xl font-semibold mb-8">Other projects</h2>
+      <h2 className="text-2xl font-semibold mb-8">Hobby projects</h2>
       <section className="grid grid-cols-1 gap-16 max-w-[700px]">
         {smallerProjects.map((project) => (
           <ProjectCard key={project.title} {...project} />

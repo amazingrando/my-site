@@ -1,0 +1,24 @@
+import LayoutProject from '../../../components/layoutProject'
+import ScreenShot from '../../../components/screenshot'
+import wtiProfile from '../../../assets/images/projects/wti-profile.png'
+import wtiPrograms from '../../../assets/images/projects/wti-programs.png'
+import YouTubeEmbed from '../../../components/youtubeEmbed'
+
+<p className="lead">**This project will have to be reviewed privately.** For now, enjoy the public links above.</p>
+
+export default function MDXPage({ children }) {
+  return (
+    <LayoutProject
+      title="Yale's first design system"
+      subtitle="Led the design team to create Yale’s first digital design system, which is used on all new websites."
+      projectRole="Creative Director"
+      backLink={true}
+      links={[
+        { text: "YaleSites", url: "https://yalesites.yale.edu" },
+        { text: "Storybook", url: "https://yalesites-org.github.io/component-library-twig/?path=/story/config--global-config" },
+      ]}
+    >
+      {children}
+    </LayoutProject>
+  )
+}

@@ -9,7 +9,16 @@ const PageHeader = ({ title, projectRole, subtitle, links }) => (
     {projectRole && <h2 className="text-xl">Role: {projectRole}</h2>}
     {links && (
       <ul className="mt-4">
-        {links.map((link) => <li><a href={link.url} className="hover:text-sky-600 transition-all underline">{link.text}</a></li>)}
+        {links.map((link) => (
+          <li key={link.text}>
+            <a
+              href={link.url}
+              className="hover:text-sky-600 transition-all underline"
+            >
+              {link.text}
+            </a>
+          </li>
+        ))}
       </ul>
     )}
   </div>
