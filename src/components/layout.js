@@ -10,6 +10,7 @@ import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import Header from '@/components/header';
 import Head from 'next/head';
+import * as Fathom from 'fathom-client';
 
 export default function Layout({ children, pageTitle }) {
   const destinations = [
@@ -90,6 +91,9 @@ export default function Layout({ children, pageTitle }) {
               <Link
                 href={destination.url}
                 className="flex flex-row gap-2 items-center hover:text-sky-600"
+                onClick={() => {
+                  Fathom.trackEvent(`Footer: ${destination.label}`);
+                }}
               >
                 <FontAwesomeIcon
                   icon={destination.icon}
