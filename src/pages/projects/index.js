@@ -99,7 +99,7 @@ const projects = [
   {
     title:
       'Bits and Mortar ensures that every tabletop game store can deliver files to their customers',
-    role: 'Product Designer and Developer',
+    role: 'Owner, Product Designer, and Developer',
     description:
       'When someone buys a tabletop roleplaying game—like Dungeons and Dragons—from any local game store worldwide, we send them a PDF.',
     imageSrc: bnm,

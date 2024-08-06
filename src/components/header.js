@@ -4,7 +4,7 @@ import randyHead from '../assets/images/randy.png';
 
 const Header = () => (
   <header className="z-50">
-    <Link href="/" className="flex flex-row no-wrap items-center">
+    <Link href="/" className="flex flex-row no-wrap items-center w-max">
       <Image
         src={randyHead}
         alt="Randy"

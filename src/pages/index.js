@@ -46,9 +46,8 @@ export default function Home() {
         variants={list}
         className="text-xl md:text-2xl mb-16 max-w-lg"
       >
-        My goal is to make the online world as approachable, as understandable,
-        and as delightful as the real world. I want to make people happy and
-        confident online.
+        My goal is to make the online world as approachable, understandable, and
+        delightful as the real world.
       </motion.p>
 
       <motion.nav
