@@ -9,8 +9,6 @@ export default function App({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page);
 
-  console.log(process.env.NEXT_PUBLIC_FATHOM_ID, 'process.env.FATHOM_ID');
-
   useEffect(() => {
     // Initialize Fathom when the app loads
     // Example: yourdomain.com

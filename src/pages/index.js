@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   const list = {
-    visible: { opacity: 1, transition: { delay: 1 } },
+    visible: { opacity: 1, transition: { delay: 0.4 } },
     hidden: { opacity: 0 },
   };
 
@@ -31,16 +31,12 @@ export default function Home() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="text-4xl md:text-6xl font-normal mb-24"
+        className="text-4xl md:text-6xl font-normal mb-24 max-w-2xl"
       >
         <motion.span variants={item} className="block">
-          Creative Director
-        </motion.span>
-        <motion.span variants={item} className="block">
-          Speaker & Podcaster
-        </motion.span>
-        <motion.span variants={item} className="block">
-          Dungeon Master
+          I create <strong className="font-semibold">design systems</strong> and{' '}
+          <strong className="font-semibold">products</strong> to make businesses
+          better
         </motion.span>
       </motion.h1>
 

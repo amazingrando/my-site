@@ -49,38 +49,31 @@ const ProjectCard = ({
         </Link>
       </h2>
       <p className="text-sm text-slate-600">Role: {role}</p>
-      <p className="mt-8">{description}</p>
+      <p className="mt-4">{description}</p>
     </div>
   </motion.article>
 );
 
 const projects = [
   {
-    title: "Yale's first design system",
+    title: 'All new Yale sites use the design system I crafted',
     role: 'Creative Director',
     description:
-      'Led the design team to create Yale’s first digital design system, which is used on all new websites.',
+      'Yale has more than a thousand websites, and now, with its first digital design system, it can keep them all on brand.',
     imageSrc: yaleds,
     url: '/projects/yale-ds',
   },
   {
-    title: 'Design in Good Company podcast',
-    role: 'Host',
-    description:
-      'A podcast about design, leadership, and the power of community.',
-    imageSrc: podcast,
-    url: 'projects/podcast',
-  },
-  {
-    title: 'Emulsify Design System for Figma and Drupal',
-    role: 'Project Lead',
+    title:
+      'Emulsify is the go-to design system solution for hundreds of designer and developer teams working on Drupal sites',
+    role: 'Product Lead',
     description:
       'I guide the strategic vision for the project, ensuring its alignment with the evolving needs of the Drupal community.',
     imageSrc: emulsify,
     url: '/projects/emulsify',
   },
   {
-    title: 'Wu Tsai Institute lost a Webby to Spotify',
+    title: 'Wu Tsai Institute design lost a Webby to Spotify',
     role: 'Creative Director',
     description:
       'Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition.',
@@ -96,27 +89,30 @@ const projects = [
     url: '/projects/nyu',
   },
   {
-    title: 'Yale Cybersecurity—make boring things interesting',
+    title: 'Yale Cybersecurity—make boring things exciting',
     role: 'Designer',
     description:
-      'Making a department of NO into a department of KNOW. Cybersecurity is cool, right?',
+      'Making a department of NO into a department of KNOW. Cybersecurity is cool!',
     imageSrc: cyber,
     url: 'projects/cybersecurity',
   },
-
-  // {
-  //   title: 'Decoupled Days 2022 organizer',
-  //   role: 'Organizer',
-  //   description:
-  //     'And like that the reign of the Sorcier came to a close thanks to the Gunpowder Revolution.',
-  // },
-  // {
-  //   title:
-  //     'A successful Kickstarter that funded in 4 hours and delivered to backers early',
-  //   role: 'Publisher',
-  //   description:
-  //     'And like that the reign of the Sorcier came to a close thanks to the Gunpowder Revolution.',
-  // },
+  {
+    title:
+      'Bits and Mortar ensures that every tabletop game store can deliver files to their customers',
+    role: 'Product Designer and Developer',
+    description:
+      'When someone buys a tabletop roleplaying game—like Dungeons and Dragons—from any local game store worldwide, we send them a PDF.',
+    imageSrc: bnm,
+    url: 'projects/bits-and-mortar',
+  },
+  {
+    title: 'Design in Good Company podcast',
+    role: 'Host',
+    description:
+      'A podcast about design, leadership, and the power of community.',
+    imageSrc: podcast,
+    url: 'projects/podcast',
+  },
 ];
 
 const smallerProjects = [
@@ -136,15 +132,6 @@ const smallerProjects = [
       'Won a gold ENNIE for Best Website in 2018. The site is used by thousands of players and GMs every month.',
     imageSrc: bitd,
     url: 'https://bladesinthedark.com/',
-  },
-  {
-    title:
-      'Bits and Mortar, supporting local game stores with digital downloads',
-    role: 'Designer and developer',
-    description:
-      'Bringing the physical and digital worlds together so people can support their Friendly Local Gaming Store while keeping up-to-date with their digital collection.',
-    imageSrc: bnm,
-    url: 'https://www.bits-and-mortar.com/',
   },
 ];
 

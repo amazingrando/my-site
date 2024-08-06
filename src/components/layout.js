@@ -4,7 +4,7 @@ import {
   faYoutube,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
-import { faAt, faSwords } from '@fortawesome/pro-solid-svg-icons';
+import { faAt, faSwords, faMicrophone } from '@fortawesome/pro-solid-svg-icons';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
@@ -15,21 +15,21 @@ export default function Layout({ children, pageTitle }) {
   const destinations = [
     {
       icon: faLinkedin,
-      label: 'Resume',
+      label: 'Experience',
       url: 'https://www.linkedin.com/in/amazingrando/',
       bg: 'bg-linkedin',
+    },
+    {
+      icon: faMicrophone,
+      label: 'Podcast',
+      url: 'https://designingoodcompany.com/',
+      bg: 'bg-youtube',
     },
     {
       icon: faYoutube,
       label: 'Speaking',
       url: 'https://www.youtube.com/playlist?list=PL752rfJII3mLqPLfDIb8mYxB-kYHV3-1e',
       bg: 'bg-youtube',
-    },
-    {
-      icon: faAt,
-      label: 'Email',
-      url: 'mailto:oest@amazingrando.com',
-      bg: 'bg-email',
     },
     {
       icon: faGithub,
@@ -42,6 +42,12 @@ export default function Layout({ children, pageTitle }) {
       label: 'Gaming',
       url: 'https://drinkinganddragons.com/',
       bg: 'bg-ttrpg',
+    },
+    {
+      icon: faAt,
+      label: 'Email',
+      url: 'mailto:oest@amazingrando.com',
+      bg: 'bg-email',
     },
   ];
   const text = 'text-slate-700';
@@ -83,7 +89,7 @@ export default function Layout({ children, pageTitle }) {
             <li key={destination.label}>
               <Link
                 href={destination.url}
-                className="flex flex-row gap-2 items-center"
+                className="flex flex-row gap-2 items-center hover:text-sky-600"
               >
                 <FontAwesomeIcon
                   icon={destination.icon}

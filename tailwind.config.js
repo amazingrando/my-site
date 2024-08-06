@@ -14,6 +14,7 @@ module.exports = {
         github: '#181717',
         ttrpg: '#922A1E',
         email: '#3366FF',
+        link: '#3366FF',
         almostBlack: '#282828',
         speaking: {
           DEFAULT: '#181313',

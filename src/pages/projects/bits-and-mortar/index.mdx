@@ -1,0 +1,41 @@
+import LayoutProject from '../../../components/layoutProject'
+import ScreenShot from '../../../components/screenshot'
+import YouTubeEmbed from '../../../components/youtubeEmbed'
+import bnmHome from '../../../assets/images/projects/bnm-homepage.png'
+import bnmInside from '../../../assets/images/projects/bnm-inside.png'
+
+<p className="lead">Gamers have a tough choice—buying a roleplaying game book from a local store supports the community; however, purchasing the game directly from the publisher gets them the book and the PDF version, which they can't get from the store.</p>
+
+Local stores are usually small mom-and-pop shops without a direct relationship with game publishers.
+
+### Bits and Mortar fixes this problem by giving stores a way to distribute PDFs from the publisher.
+
+I worked with Evil Hat Productions, a game publisher and the originators of Bits and Mortar (which was originally a collection of databases and PHP scripts). 
+
+They leveraged their relationships with retailers and fellow publishers to drive people to the site, and I made the experience easy to use.
+
+Successes:
+
+* 850+ retailers are part of the Bits and Mortar program
+* 15,000+ files are sent by retailers each year 
+* 220+ publishers are part of the program, representing the majority of the tabletop roleplaying game industry
+* 24,000+ customers use the site to maintain their digital games library.
+
+<ScreenShot src={bnmHome} title="Bits and Mortar new homepage"/>
+<ScreenShot src={bnmInside} title="Bits and Mortar new inside page"/>
+
+export default function MDXPage({ children }) {
+  return (
+    <LayoutProject
+      title="Bits and Mortar ensures that every tabletop game store can deliver files to their customers"
+      subtitle="When someone buys a tabletop roleplaying game—like Dungeons and Dragons—from any local game store worldwide, we send them a PDF."
+      projectRole="Product Designer and Developer"
+      backLink={true}
+      links={[
+        { text: "Bits and Mortar (New site coming soon)", url: "https://www.bits-and-mortar.com/" },
+      ]}
+    >
+      {children}
+    </LayoutProject>
+  )
+}
