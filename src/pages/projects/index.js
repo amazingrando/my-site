@@ -56,7 +56,7 @@ const ProjectCard = ({
 
 const projects = [
   {
-    title: 'All new Yale sites use the design system I crafted',
+    title: 'All new Yale sites use the design system I established',
     role: 'Creative Director',
     description:
       'Yale has more than a thousand websites, and now, with its first digital design system, it can keep them all on brand.',
