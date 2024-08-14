@@ -1,8 +1,12 @@
 import LayoutProject from '../../../components/layoutProject'
 import ScreenShot from '../../../components/screenshot'
-import wtiProfile from '../../../assets/images/projects/wti-profile.png'
-import wtiPrograms from '../../../assets/images/projects/wti-programs.png'
-import YouTubeEmbed from '../../../components/youtubeEmbed'
+import ysalerts from '../../../assets/images/projects/ys-alerts.png';
+import ysarticle from '../../../assets/images/projects/ys-article.png';
+import ysbuttons from '../../../assets/images/projects/ys-buttons.png';
+import yscolors from '../../../assets/images/projects/ys-colors.png';
+import ysevent from '../../../assets/images/projects/ys-event.png';
+import yssettings from '../../../assets/images/projects/ys-settings.png';
+import yssites from '../../../assets/images/projects/ys-sites.png';
 
 <p className="lead">I led the team as the Creative Director, working alongside a UI designer and a frontend engineer from my team at Four Kitchens while teaming up with a UX designer and an accessibility expert from Yale.</p>
 
@@ -21,6 +25,14 @@ Yale is a dot all your i's and cross your t's before sending anything out cultur
 Once we uncovered and identified this friction, I had my team adapt our working style to accommodate theirs. Behind the scenes, I worked with critical stakeholders to encourage a more open process. 
 
 Within a few cycles, we created a hybrid culture that adopted the best of both worlds by sharing drafts one-on-one with Yale people and buttoning them up for group presentations.
+
+<ScreenShot src={yssites} title="YaleSites landing page"/>
+<ScreenShot src={yssettings} title="YaleSites Storybook Settings"/>
+<ScreenShot src={yscolors} title="YaleSites Storybook Colors"/>
+<ScreenShot src={ysbuttons} title="YaleSites Storybook Buttons"/>
+<ScreenShot src={ysarticle} title="YaleSites Storybook Article"/>
+<ScreenShot src={ysevent} title="YaleSites Storybook Event"/>
+<ScreenShot src={ysalerts} title="YaleSites Storybook Alerts"/>
 
 export default function MDXPage({ children }) {
   return (
