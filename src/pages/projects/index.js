@@ -9,6 +9,7 @@ import bitd from '@/assets/images/projects/bitd.png';
 import bnm from '@/assets/images/projects/bnm.png';
 import fate from '@/assets/images/projects/fate.png';
 import yaleds from '@/assets/images/projects/yaleds.png';
+import exportColors from '@/assets/images/projects/export-colors.png';
 import nyu from '@/assets/images/projects/nyu.png';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -116,6 +117,13 @@ const projects = [
 ];
 
 const smallerProjects = [
+  {
+    title: 'Figma plugin: Export Color Variables for Tailwind',
+    role: 'Creator',
+    description: 'A Figma plugin that exports color variables for Tailwind.',
+    imageSrc: exportColors,
+    url: 'https://www.figma.com/community/plugin/1452047036348662509/export-color-variables-for-tailwind',
+  },
   {
     title: 'Fate SRD, a digital rules reference for the Fate RPG',
     role: 'Owner',
