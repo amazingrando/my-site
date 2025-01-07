@@ -11,6 +11,7 @@ import fate from '@/assets/images/projects/fate.png';
 import yaleds from '@/assets/images/projects/yaleds.png';
 import exportColors from '@/assets/images/projects/export-colors.png';
 import nyu from '@/assets/images/projects/nyu.png';
+import iosD20 from '@/assets/images/projects/iosD20.png';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/pro-regular-svg-icons';
@@ -140,6 +141,14 @@ const smallerProjects = [
       'Won a gold ENNIE for Best Website in 2018. The site is used by thousands of players and GMs every month.',
     imageSrc: bitd,
     url: 'https://bladesinthedark.com/',
+  },
+  {
+    title: 'Random d20 lockscreen wallpaper',
+    role: 'Creator',
+    description:
+      'A collection of images of d20s that change every time you tap your screen.',
+    imageSrc: iosD20,
+    url: 'https://drive.google.com/drive/folders/1-fvJbsjlFCCYPl_YaYTiqS_mLax8e5fz?usp=drive_link',
   },
 ];
 
