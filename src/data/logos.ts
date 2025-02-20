@@ -4,8 +4,8 @@ import ithaca from '@/assets/images/logos/ithaca.svg';
 import nyu from '@/assets/images/logos/nyu.svg';
 import smithCollege from '@/assets/images/logos/smith-college.svg';
 import stanford from '@/assets/images/logos/stanford.svg';
-import texasLawHelp from '@/assets/images/logos/texaslawhelp.svg';
-import uft from '@/assets/images/logos/uft.svg';
+// import texasLawHelp from '@/assets/images/logos/texaslawhelp.svg';
+// import uft from '@/assets/images/logos/uft.svg';
 import yale from '@/assets/images/logos/yale.svg';
 
 export const logos = [
