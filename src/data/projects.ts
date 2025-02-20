@@ -13,6 +13,7 @@ import iosD20 from '@/assets/images/projects/iosD20.png';
 export const projects = [
   {
     title: 'All new Yale sites use the design system I established',
+    trackingName: 'YaleSites',
     role: 'Creative Director',
     description:
       'Yale has more than a thousand websites, and now, with its first digital design system, it can keep them all on brand.',
@@ -21,6 +22,7 @@ export const projects = [
   },
   {
     title: 'Wu Tsai Institute design lost a Webby to Spotify',
+    trackingName: 'Yale WTI',
     role: 'Creative Director',
     description:
     'Connecting neuroscience and data science to accelerate breakthroughs in understanding cognition.',
@@ -30,6 +32,7 @@ export const projects = [
   {
     title:
       'Emulsify is the go-to design system solution for hundreds of designer and developer teams working on Drupal sites',
+    trackingName: 'Emulsify',
     role: 'Product Lead',
     description:
       'I guide the strategic vision for the project, ensuring its alignment with the evolving needs of the Drupal community.',
@@ -38,6 +41,7 @@ export const projects = [
   },
   {
     title: 'Reinventing the public health paradigm with NYU',
+    trackingName: 'NYU School of Global Public Health',
     role: 'Designer',
     description:
       'This website redesign revolutionized the digital footprint of the school, capturing its vibrant energy while enhancing the user experience.',
@@ -74,6 +78,7 @@ export const projects = [
 export const smallerProjects = [
    {
     title: 'Design in Good Company podcast',
+    trackingName: 'design-in-good-company',
     role: 'Host',
     description:
       'A podcast about design, leadership, and the power of community.',
@@ -82,6 +87,7 @@ export const smallerProjects = [
   },
   {
     title: 'Figma plugin: Export Color Variables for Tailwind',
+    trackingName: 'figma-export-colors',
     role: 'Creator',
     description: 'A Figma plugin that exports color variables for Tailwind.',
     imageSrc: exportColors,
@@ -89,6 +95,7 @@ export const smallerProjects = [
   },
   {
     title: 'Fate SRD, a digital rules reference for the Fate RPG',
+    trackingName: 'fate-srd',
     role: 'Owner',
     description:
       'Won a silver ENNIE for Best Website in 2014. The site is used by thousands of players and GMs every month.',
@@ -98,6 +105,7 @@ export const smallerProjects = [
   {
     title:
       'Blades in the Dark SRD, a digital rules reference for the Blades in the Dark RPG',
+    trackingName: 'blades-in-the-dark',
     role: 'Owner',
     description:
       'Won a gold ENNIE for Best Website in 2018. The site is used by thousands of players and GMs every month.',
@@ -106,6 +114,7 @@ export const smallerProjects = [
   },
   {
     title: 'Random d20 lockscreen wallpaper',
+    trackingName: 'd20-wallpaper',
     role: 'Creator',
     description:
       'A collection of images of d20s that change every time you tap your screen.',

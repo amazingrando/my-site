@@ -1,5 +1,6 @@
 import Sparkles from '@/lib/sparkle';
 import Link from 'next/link';
+import * as Fathom from 'fathom-client';
 
 export default function HomeHero() {
   return (
@@ -18,7 +19,7 @@ export default function HomeHero() {
       </h1>
 
       <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-balance max-w-4xl inline-block">
-        I set the vision, create the structure, and adapt as the story unfolds—whether that&apos;s a <Link href="/projects/yale-ds" className='underline text-blue-600 whitespace-nowrap'>design system</Link>, a <Link href="/projects/wti" className='underline text-blue-600 whitespace-nowrap'>website</Link>, or an <Link href="/projects/nyu" className='underline text-blue-600 no-wrap'>award-winning project</Link>.
+        I set the vision, create the structure, and adapt as the story unfolds—whether that&apos;s a <Link href="/projects/yale-ds" className='underline text-blue-600 whitespace-nowrap' onClick={() => { Fathom.trackEvent(`Project link: YaleSites`);}}>design system</Link>, a <Link href="/projects/wti" className='underline text-blue-600 whitespace-nowrap' onClick={() => { Fathom.trackEvent(`Project link: Yale WTI`);}}>website</Link>, or an <Link href="/projects/nyu" className='underline text-blue-600 no-wrap' onClick={() => { Fathom.trackEvent(`Project link: NYU School of Global Public Health`);}}>award-winning project</Link>.
       </h2>
     </div>
   );
