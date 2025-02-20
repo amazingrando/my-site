@@ -1,0 +1,46 @@
+// import { NavPrimary } from "./navPrimary";
+import Randy from '@/assets/images/randy.png'
+import Image from "next/image";
+import Link from "next/link";
+import { Emphasis } from "../graphics/emphasis";
+import social from '@/data/social';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const Header = () => {
+  return (
+    
+      <header className="px-8 py-4 md:px-16 md:py-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center md:gap-8 z-40 mb-8 md:mb-16">
+        <Link href="/" className="flex flex-row no-wrap gap-1 items-center w-max">
+          <Image
+            src={Randy}
+            alt="Randy"
+            className="w-[4rem] h-[4rem] top-[6px] relative -ml-[0.7rem]"
+          />
+          <div>
+            <h1 className="uppercase text-xl md:text-2xl font-bold">
+              <span>
+                <Emphasis className="w-[6rem] h-[1.5rem] text-blue-600" />
+                Amazing{' '}
+              </span>
+              Rando
+            </h1>
+            <p className="text-sm font-medium">Crafting digital experiences worthy of legend.</p>
+          </div>
+        </Link> 
+        <div className="flex flex-row gap-4 ml-[57px]">
+            {social.map((item) => (
+              <a 
+              href={item.url} 
+              key={item.label}
+              className="hover:text-blue-600 transition-colors"
+              >
+                <FontAwesomeIcon icon={item.icon} size="lg" />
+              </a>
+            ))}
+          </div>
+        {/* <NavPrimary className="hidden" /> */}
+      </header>
+  );
+};
+
+export default Header;
