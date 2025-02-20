@@ -1,3 +1,18 @@
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> 
+}) {
+  const slug = (await params).slug
+  const content = await import(`../../../content/${slug}.mdx`)
+  const frontmatter = content.frontmatter
+
+  return {
+    title: frontmatter.title,
+    description: frontmatter.subtitle || '',
+  }
+}
+
 export default async function Page({
   params,
 }: {

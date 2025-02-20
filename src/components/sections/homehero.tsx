@@ -18,7 +18,7 @@ export default function HomeHero() {
       </h1>
 
       <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-balance max-w-4xl inline-block">
-        I set the vision, create the structure, and adapt as the story unfolds—whether that&apos;s a <Link href="/design-systems" className='underline text-blue-600 whitespace-nowrap'>design system</Link>, a <Link href="/websites" className='underline text-blue-600 whitespace-nowrap'>website</Link>, or an <Link href="/awards" className='underline text-blue-600 no-wrap'>award-winning project</Link>.
+        I set the vision, create the structure, and adapt as the story unfolds—whether that&apos;s a <Link href="/projects/yale-ds" className='underline text-blue-600 whitespace-nowrap'>design system</Link>, a <Link href="/projects/wti" className='underline text-blue-600 whitespace-nowrap'>website</Link>, or an <Link href="/projects/nyu" className='underline text-blue-600 no-wrap'>award-winning project</Link>.
       </h2>
     </div>
   );
