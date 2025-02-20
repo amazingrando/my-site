@@ -46,18 +46,6 @@ export const logos = [
     rowSpan: 'row-span-1'
   },
   {
-    logo: texasLawHelp,
-    name: 'Texas Law Help',
-    colSpan: 'col-span-1',
-    rowSpan: 'row-span-2'
-  },
-  {
-    logo: uft,
-    name: 'UFT',
-    colSpan: 'col-span-1',
-    rowSpan: 'row-span-1'
-  },
-  {
     logo: yale,
     name: 'Yale',
     colSpan: 'col-span-2',
