@@ -13,6 +13,11 @@ export async function generateMetadata({
   }
 }
 
+interface Link {
+  text: string;
+  url: string;
+}
+
 export default async function Page({
   params,
 }: {
@@ -42,7 +47,7 @@ export default async function Page({
         {frontmatter.links && frontmatter.links.length > 0 && (
           <nav aria-label="Page links" className="mt-4">
             <ul className="flex flex-wrap gap-4">
-              {frontmatter.links.map((link) => (
+              {frontmatter.links.map((link: Link) => (
                 <li key={link.text}>
                   <a
                     href={link.url}

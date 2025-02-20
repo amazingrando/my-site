@@ -1,9 +1,10 @@
 interface PinProps {
   lineColor?: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export default function Pin({ lineColor = "black", className = "" }: PinProps) {
+export default function Pin({ lineColor = "black", className = "", style }: PinProps) {
   return (
     <svg 
       width="13" 
@@ -12,6 +13,7 @@ export default function Pin({ lineColor = "black", className = "" }: PinProps) {
       fill="none" 
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      style={style}
     >
       <line 
         x1="6.5" 

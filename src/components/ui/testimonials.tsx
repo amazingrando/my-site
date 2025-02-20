@@ -19,7 +19,7 @@ export interface TestimonialProps {
 }
 
 export function Testimonial({ quote, author, role, avatar, linkedin, style, rotation = 0, className = '' }: TestimonialProps) {
-  const quoteRef = useRef<HTMLDivElement>(null);
+  const quoteRef = useRef<HTMLQuoteElement>(null);
 
   useEffect(() => {
     const highlights: HTMLElement[] = [];
