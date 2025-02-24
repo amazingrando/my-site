@@ -42,5 +42,26 @@ export const testimonials: TestimonialProps[] = [
     role: " Lead UI/UX Designer | Accessibility Advocate",
     avatar: "/images/avatars/ashleyhitson.jpg",
     linkedin: "https://www.linkedin.com/in/nicalorber"
+  },
+  {
+    quote: "Beyond his leadership, Randy is a true Notion and Figma wizard, effortlessly organizing, strategizing, and bringing creative visions to life. <span class='highlight'>His ability to bridge the gap between structure and creativity makes him an invaluable asset</span> to any team.",
+    author: "Shanice Ortiz",
+    role: "Director of Projects at Four Kitchens",
+    avatar: "/images/avatars/shanice.jpg",
+    linkedin: "https://www.linkedin.com/in/shaniceortiz/"
+  },
+  {
+    quote: "Randy is <span class='highlight'>the perfect mix of vision, strategy, and creative brilliance</span>. He’s fun to work with, keeps teams inspired, and always delivers outstanding results",
+    author: "Scott Riley",
+    role: "Vice President, Analytics Project Management at Publicis Collective",
+    avatar: "/images/avatars/scottriley.jpg",
+    linkedin: "https://www.linkedin.com/in/scott-riley-9355679a/"
+  },
+  {
+    quote: "As a Creative Director, he guided projects and client conversations with finesse - <span class='highlight'>never settling for a “just okay” option, but constantly challenging the team to deliver solutions that excited</span> both the stakeholder and end user. ",
+    author: "Brendan Wu",
+    role: "Senior Product Designer",
+    avatar: "/images/avatars/brendanwu.jpg",
+    linkedin: "https://www.linkedin.com/in/brendan-wu-design/"
   }
 ]; 
