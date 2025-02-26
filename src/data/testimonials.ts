@@ -2,6 +2,20 @@ import { TestimonialProps } from '@/components/ui/testimonials';
 
 export const testimonials: TestimonialProps[] = [
   {
+    quote: "<span class='highlight'>Randy Oest is the kind of creative leader every organization needs</span>: innovative, detail-oriented, fluent in the technical aspects of the work, a beloved and inspiring manager, and deeply committed to both his craft and his team.",
+    author: "Todd Ross Nienkerk",
+    role: "CEO, Owner, and Co-Founder of Four Kitchens",
+    avatar: "/images/avatars/todd.jpg",
+    linkedin: "https://www.linkedin.com/in/toddross/"
+  },
+  {
+    quote: "As Creative Director at Four Kitchens, he somehow manages to be both wildly imaginative and relentlessly organized. <span class='highlight'>He’ll come up with a brilliant idea, execute it flawlessly, and then document the entire process in Notion with a Loom walkthrough</span> before you’ve even finished your coffee.",
+    author: "Elia Milán",
+    role: "Chief Operations Officer at Four Kitchens",
+    avatar: "/images/avatars/elia.jpg",
+    linkedin: "https://www.linkedin.com/in/eliamilan/"
+  },
+  {
     quote: "<span class='highlight'>Working with Rando is like using a mac:</span> it just works the way that you would have expected even if you weren't aware of the expectation.",
     author: "Patrick Bagwell",
     role: "Vice President of Solutions at ConnectivRX",
@@ -14,6 +28,13 @@ export const testimonials: TestimonialProps[] = [
     role: "Senior Program Manager for Marketing Strategy at Cloudflare, Inc.",
     avatar: "/images/avatars/suzybates.jpg",
     linkedin: "https://linkedin.com/in/suzy-bates"
+  },
+  {
+    quote: "Randy is <span class='highlight'>the perfect mix of vision, strategy, and creative brilliance</span>. He’s fun to work with, keeps teams inspired, and always delivers outstanding results",
+    author: "Scott Riley",
+    role: "Vice President, Analytics Project Management at Publicis Collective",
+    avatar: "/images/avatars/scottriley.jpg",
+    linkedin: "https://www.linkedin.com/in/scott-riley-9355679a/"
   },
   {
     quote: "When you work with Randy one thing you'll notice is that <span class='highlight'>he is always on top of his game.</span> He is an excellent communicator and has a respected voice in the industry.",
@@ -49,13 +70,6 @@ export const testimonials: TestimonialProps[] = [
     role: "Director of Projects at Four Kitchens",
     avatar: "/images/avatars/shanice.jpg",
     linkedin: "https://www.linkedin.com/in/shaniceortiz/"
-  },
-  {
-    quote: "Randy is <span class='highlight'>the perfect mix of vision, strategy, and creative brilliance</span>. He’s fun to work with, keeps teams inspired, and always delivers outstanding results",
-    author: "Scott Riley",
-    role: "Vice President, Analytics Project Management at Publicis Collective",
-    avatar: "/images/avatars/scottriley.jpg",
-    linkedin: "https://www.linkedin.com/in/scott-riley-9355679a/"
   },
   {
     quote: "As a Creative Director, he guided projects and client conversations with finesse - <span class='highlight'>never settling for a “just okay” option, but constantly challenging the team to deliver solutions that excited</span> both the stakeholder and end user. ",
