@@ -19,9 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className="antialiased font-base text-slate-700"
+        className={`antialiased font-base text-slate-700`}
       >
         <Fathom />
         <Header />

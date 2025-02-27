@@ -68,7 +68,7 @@ const ProjectCard = ({
 
 const Portfolio = () => {
   return (
-    <div className="px-4 sm:px-8 md:px-16 py-16 bg-gradient-to-b from-blue-950 to-blue-900 text-blue-100">
+    <div id="portfolio"className="px-4 sm:px-8 md:px-16 py-16 bg-gradient-to-b from-blue-950 to-blue-900 text-blue-100">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-6xl md:text-6xl lg:text-7xl font-medium text-balance mb-16 bg-gradient-to-r from-blue-100 to-blue-200 text-transparent bg-clip-text">
           Portfolio

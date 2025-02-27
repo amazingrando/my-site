@@ -1,4 +1,4 @@
-// import { NavPrimary } from "./navPrimary";
+import { NavPrimary } from "./navPrimary";
 import Randy from '@/assets/images/randy.png'
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +27,9 @@ const Header = () => {
             <p className="text-sm font-medium">Crafting digital experiences worthy of legend.</p>
           </div>
         </Link> 
-        <div className="flex flex-row gap-4 ml-[57px]">
+        <div className="flex flex-col gap-4 md:flex-col-reverse lg:flex-row lg:gap-8 lg:items-center">
+          <NavPrimary className="" />
+          <div className="hidden md:flex flex-row gap-2 md:gap-4 justify-end">
             {social.map((item) => (
               <a 
               href={item.url} 
@@ -38,7 +40,7 @@ const Header = () => {
               </a>
             ))}
           </div>
-        {/* <NavPrimary className="hidden" /> */}
+        </div>
       </header>
   );
 };
