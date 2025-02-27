@@ -51,7 +51,7 @@ export default async function Page({
                 <li key={link.text}>
                   <a
                     href={link.url}
-                    className="hover:text-blue-600 hover:underline transition-colors"
+                    className="text-blue-600 font-medium hover:text-blue-700 underline transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
