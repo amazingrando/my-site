@@ -24,7 +24,6 @@ const Header = () => {
               </span>
               Rando
             </h1>
-            <p className="text-sm font-medium">Crafting digital experiences worthy of legend.</p>
           </div>
         </Link> 
         <div className="flex flex-col gap-4 md:flex-col-reverse lg:flex-row lg:gap-8 lg:items-center">
