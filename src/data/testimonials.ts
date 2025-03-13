@@ -30,6 +30,14 @@ export const testimonials: TestimonialProps[] = [
     linkedin: "https://linkedin.com/in/suzy-bates"
   },
   {
+    quote: "<span class='highlight'>Randy is an amazing facilitator</span>—captivating, engaging, and able to guide discussions in a way that keeps teams energized and aligned.",
+    author: "Adam Erickson",
+    role: "Director of Engineering at Four Kitchens",
+    avatar: "/images/avatars/adam.jpg",
+    linkedin: "https://www.linkedin.com/in/americkson/"
+  },
+
+  {
     quote: "Randy is <span class='highlight'>the perfect mix of vision, strategy, and creative brilliance</span>. He’s fun to work with, keeps teams inspired, and always delivers outstanding results",
     author: "Scott Riley",
     role: "Vice President, Analytics Project Management at Publicis Collective",
