@@ -14,7 +14,16 @@ const nextConfig: NextConfig = {
     ],
   },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-
+  
+  async redirects() {
+    return [
+      {
+        source: '/chat',
+        destination: 'https://calendar.app.google/VyrhtubexFo5D6Gu6',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 const withMDX = createMDX({
