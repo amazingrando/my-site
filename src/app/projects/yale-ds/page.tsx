@@ -20,6 +20,9 @@ export default async function Page() {
           <div className="mx-auto max-w-7xl px-6 lg:pb-32 sm:pt-60 lg:px-8 lg:pt-32">
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
+                <div className="bg-white/50 font-medium text-ash-900 rounded-full inline-block px-3 py-1 text-base/6 ring-1 ring-primary-sky/40 mb-4">
+                  <a href="https://www.linkedin.com/posts/getpantheon_drupalconatlanta-activity-7310710693060628481-QQjR">⚡ 2025 Pantheon Partner Summit Award Winner</a>
+                </div>
                 <h1 className="text-5xl font-semibold tracking-tight text-pretty text-ash-900 sm:text-7xl">
                   All new Yale sites use the design system I established
                 </h1>
