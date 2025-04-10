@@ -11,7 +11,7 @@ import ysImage4 from '@/assets/images/projects/ys-Footer.png'
 import ysImage5 from '@/assets/images/projects/ys-Custom Cards.png'
 import ysImage6 from '@/assets/images/projects/ys-typography.png'
 import YouTubeEmbed from '@/components/ui/youtubeEmbed'
-import stanfordImage from '@/assets/images/projects/stanford-mockuuups-transparent-iphone-16-pro-mockup-titanium-black.png'
+// import stanfordImage from '@/assets/images/projects/stanford-mockuuups-transparent-iphone-16-pro-mockup-titanium-black.png'
 
 export default async function Page() {
   return (
