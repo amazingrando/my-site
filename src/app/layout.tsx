@@ -9,8 +9,8 @@ import Fathom from '@/lib/fathom';
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
-  title: "Randy Oest • Designer & storyteller for growing brands",
-  description: "I set the vision, create the structure, and adapt as the story unfolds—whether that's a design system, a website, or an award-winning project.",
+  title: "Randy Oest • I make the internet less ugly and more useful.",
+  description: "Let’s be honest: there’s a lot of bad design out there. I turn tangled content and messy ideas into clean experiences and thoughtful strategies.",
 };
 
 export default function RootLayout({
