@@ -82,8 +82,8 @@ const Portfolio = () => {
         <section className="grid grid-cols-1 lg:grid-cols-3 items-center gap-20 md:gap-16 lg:gap-24 mb-24 max-w-4xl mx-auto">
           <Image src={stanfordImage} alt="Stanford University" />
           <div className="col-span-2 space-y-4">
-            <p className="bg-blue-950 text-blue-100 rounded-full inline-block px-3 py-1 text-sm/6 font-semibold ring-1 ring-orange-600 mb-4 uppercase">New work alert</p>
-            <h3 className="text-4xl font-semibold">Bringing Stories to Life: An Immersive Photojournalism Experience for Stanford</h3>
+            <p className="bg-blue-950 text-blue-100 rounded-full inline-block px-3 py-1 text-sm/6 font-semibold ring-1 ring-orange-600 mb-4 uppercase">Just launched 🚀</p>
+            <h3 className="text-4xl font-semibold">Bringing stories to life: an immersive photojournalism experience for Stanford</h3>
             <p className="text-xl">
             To bring Stanford’s photojournalism to life, I designed an immersive, scroll-driven content experience inspired by <i>Snow Fall</i>. The final product is bold, visual, and anything but academic.
             </p>
