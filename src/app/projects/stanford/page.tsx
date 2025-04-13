@@ -11,8 +11,6 @@ import ysImage6 from '@/assets/images/projects/ys-typography.png'
 import YouTubeEmbed from '@/components/ui/youtubeEmbed'
 import stanfordImage from '@/assets/images/projects/stanford-mockuuups-transparent-iphone-16-pro-mockup-titanium-black.png'
 import stanfordImage2 from '@/assets/images/projects/stanford-mockuuups-transparent-iphone-16-pro-mockup-titanium-black1.png'
-import stanfordImage3 from '@/assets/images/projects/stanford-mockuuups-transparent-iphone-16-pro-mockup-titanium-black2.png'
-import stanfordFigma from '@/assets/images/projects/stanford-figma.png'
 import clsx from 'clsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
@@ -26,7 +24,7 @@ function Hero({className}: {className?: string}) {
       <div className="max-w-2xl mx-auto lg:col-span-2 lg:max-w-none">
         <h3 className="text-3xl md:text-5xl lg:text-7xl leading-tight md:leading-tight font-semibold tracking-tight text-pretty text-ash-900">Bringing stories to life: an immersive photojournalism experience for Stanford</h3>
         <p className="mt-8 text-base md:text-3xl sm:leading-tight md:leading-tight font-medium text-pretty text-ash-600 sm:text-xl/8">
-          To bring Stanford's photojournalism to life, I designed an immersive, scroll-driven content experience inspired by <i>Snow Fall</i>. The final product is bold, visual, and anything but academic.
+          To bring Stanford&apos;s photojournalism to life, I designed an immersive, scroll-driven content experience inspired by <i>Snow Fall</i>. The final product is bold, visual, and anything but academic.
         </p>
         <div className="mt-10 flex items-center gap-x-6 mb-8 sm:mb-0">
           <a
@@ -103,20 +101,18 @@ export default function Page() {
 
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 relative">
           <main className="prose lg:prose-lg prose-headings:font-semibold prose-strong:text-slate-600 prose-headings:text-slate-700 prose-li:marker:text-slate-600 pb-16 lg:sticky lg:top-16 self-start">
-            <h2>Unifying Yale's Digital Presence with a Thoughtfully Crafted Design System</h2>
+            <h2>Unifying Yale&apos;s Digital Presence with a Thoughtfully Crafted Design System</h2>
             <p className='lead'>I led the team as the Creative Director, working alongside a UI designer and a frontend engineer from my team at Four Kitchens while teaming up with a UX designer and an accessibility expert from Yale.</p>
             <p>A design system was born, and it delivered the following:</p>
             <ul>
-            <li><strong>A suite of design tokens</strong> that define Yale's digital brand and provide flexibility for future digital projects—web, react, iOS, etc.</li>
+            <li><strong>A suite of design tokens</strong> that define Yale&apos;s digital brand and provide flexibility for future digital projects—web, react, iOS, etc.</li>
             <li><strong>A library of adaptable and customizable components</strong> is available in their CMS. Each component was thoroughly accessibility tested with automated tooling and direct user testing with people with disabilities.</li>
-            <li><strong>A theming system that gives users choices</strong> in how their site looks while maintaining Yale's brand. Giving users the ability to choose how their school or department site looks has increased the adoption of Yale's centralized site service.</li>
+            <li><strong>A theming system that gives users choices</strong> in how their site looks while maintaining Yale&apos;s brand. Giving users the ability to choose how their school or department site looks has increased the adoption of Yale&apos;s centralized site service.</li>
             </ul>
           </main>
           <Image src={yssites} alt="YaleSites homepage" className='border border-ash-200' />
         </div>
         </div>
-        
-        
 
         <div className='grid grid-cols-2 grid-rows-4 max-h-screen'>
           <Image src={ysImage2} alt="YaleSites homepage" className='row-span-2 object-cover w-full h-full' />
