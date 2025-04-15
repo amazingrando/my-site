@@ -19,7 +19,7 @@ import stanfordResponsive from '@/assets/images/projects/stanford-responsive.gif
 function Hero({className}: {className?: string}) {
   return (
     <section className={clsx(
-      "min-h-[80vh] grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 lg:gap-16 px-8 lg:px-16 justify-center items-center relative", 
+      "min-h-[80vh] grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 lg:gap-16 px-8 lg:px-16 justify-center items-center relative max-w-[100rem] mx-auto", 
       className
       )}>
       <div className="max-w-2xl mx-auto lg:col-span-2 lg:max-w-none">
@@ -65,25 +65,13 @@ function Impact({className}: {className?: string}) {
         <h2>The launch of the photojournalism storytelling experience for Stanford’s School of Humanities and Sciences (Humsci) made an immediate, university-wide impact.</h2>
         <YouTubeEmbed embedId="-yWCzsHyPK4" className='h-auto md:-mx-8 lg:-mx-16' />
         {/* <Image src={stanfordResponsive} alt="Stanford Responsive" className='w-full h-auto' /> */}
-        <p className='lead'>The very first story built with the new design—Jasper Ridge—was selected as the featured story on the Stanford Report homepage, an honor typically reserved for the university’s most high-profile content. The response was swift and overwhelmingly positive:</p>
+        <p className='lead'>The very first story built with the new design—Jasper Ridge—was selected as the featured story on the Stanford Report homepage, an honor typically reserved for the university’s most high-profile content. The response was swift and overwhelmingly positive.</p>
 
-        <blockquote className='not-prose text-xl md:text-2xl leading-relaxed font-medium my-16 ps-4 md:-mx-12 lg:-mx-32'>
+        <blockquote className='not-prose text-xl md:text-2xl leading-relaxed font-medium mt-20 ps-4 md:-mx-12 lg:-mx-32'>
           <FontAwesomeIcon icon={faQuoteLeft} className='float-left text-2xl text-blue-600 -ml-8' />
           The Jasper Ridge story built using the new photojournalism feature on Humsci was the featured story on the Stanford Report this morning (that’s big!). It’s been getting serious love all over campus — from the UXers channel marveling at the beautiful mobile experience (and who compared it to the NYTimes), to delighted heads of department who called it food for the soul…”
           <cite className='block mt-4 text-lg not-italic text-ash-600'>— The Client</cite>
         </blockquote>
-
-        <h2>The project received glowing praise from:</h2>
-        
-        <ul>
-          <li>UX and design teams across campus, who celebrated the elegant mobile experience and immersive feel—many even compared it to the New York Times’ Snowfall</li>
-          <li>Faculty and leadership, who described it as “food for the soul”</li>
-          <li>Editorial teams, who were thrilled to finally have a flexible system that allowed them to center visual storytelling without compromise</li>
-        </ul>
-
-        <p>This wasn’t just a successful launch—it was a turning point.</p>
-        
-        <p>The new design raised expectations for what digital publishing could look like at Stanford, showing that university storytelling could be editorially rich, emotionally resonant, and visually striking all at once.</p>
       </div>
     </section>
   )
@@ -94,11 +82,24 @@ export default function Page() {
     <div>
       <Hero />
       <Impact />
-      
+      <section className="bg-blue-800 text-white p-4 pt-8 lg:p-16">
+        <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="prose-reversed:prose lg:prose-lg xl:prose-xl prose-headings:font-semibold prose-li:marker:text-white mx-auto prose-reversed">
+            <h2>The project received glowing praise from:</h2>
+            
+            <ul>
+              <li>UX and design teams across campus, who celebrated the elegant mobile experience and immersive feel—many even compared it to the New York Times’ Snowfall</li>
+              <li>Faculty and leadership, who described it as “food for the soul”</li>
+              <li>Editorial teams, who were thrilled to finally have a flexible system that allowed them to center visual storytelling without compromise</li>
+            </ul>
 
-      <div className="bg-white p-4 pt-8 lg:p-16">
-        <YouTubeEmbed embedId="-yWCzsHyPK4"/>
-      </div>
+            <p>This wasn’t just a successful launch—it was a turning point.</p>
+            
+            <p>The new design raised expectations for what digital publishing could look like at Stanford, showing that university storytelling could be editorially rich, emotionally resonant, and visually striking all at once.</p>
+          </div>
+        </div>
+        
+      </section>
 
       <div className="bg-white p-4 pt-8 lg:p-16">
 
