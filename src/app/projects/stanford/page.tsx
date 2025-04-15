@@ -14,11 +14,12 @@ import stanfordImage2 from '@/assets/images/projects/stanford-mockuuups-transpar
 import clsx from 'clsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import stanfordResponsive from '@/assets/images/projects/stanford-responsive.gif'
 
 function Hero({className}: {className?: string}) {
   return (
     <section className={clsx(
-      "min-h-[80vh] grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 lg:gap-16 px-8 lg:px-16 justify-center relative", 
+      "min-h-[80vh] grid grid-cols-3 md:grid-cols-2 lg:grid-cols-4 lg:gap-16 px-8 lg:px-16 justify-center items-center relative", 
       className
       )}>
       <div className="max-w-2xl mx-auto lg:col-span-2 lg:max-w-none">
@@ -62,6 +63,8 @@ function Impact({className}: {className?: string}) {
       <div className="prose lg:prose-lg prose-headings:font-semibold prose-strong:text-slate-600 prose-headings:text-slate-700 prose-li:marker:text-slate-600 mx-auto">
 
         <h2>The launch of the photojournalism storytelling experience for Stanford’s School of Humanities and Sciences (Humsci) made an immediate, university-wide impact.</h2>
+        <YouTubeEmbed embedId="-yWCzsHyPK4" className='h-auto md:-mx-8 lg:-mx-16' />
+        {/* <Image src={stanfordResponsive} alt="Stanford Responsive" className='w-full h-auto' /> */}
         <p className='lead'>The very first story built with the new design—Jasper Ridge—was selected as the featured story on the Stanford Report homepage, an honor typically reserved for the university’s most high-profile content. The response was swift and overwhelmingly positive:</p>
 
         <blockquote className='not-prose text-xl md:text-2xl leading-relaxed font-medium my-16 ps-4 md:-mx-12 lg:-mx-32'>
@@ -94,7 +97,7 @@ export default function Page() {
       
 
       <div className="bg-white p-4 pt-8 lg:p-16">
-        <YouTubeEmbed embedId="7RP6iUCdOKY"/>
+        <YouTubeEmbed embedId="-yWCzsHyPK4"/>
       </div>
 
       <div className="bg-white p-4 pt-8 lg:p-16">
