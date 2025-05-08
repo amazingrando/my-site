@@ -5,6 +5,7 @@ import { projects, smallerProjects } from '@/data/projects';
 import Link from 'next/link';
 import classNames from 'classnames';
 import * as Fathom from 'fathom-client';
+import stanfordImage from '@/assets/images/projects/stanford-mockuuups-transparent-iphone-16-pro-mockup-titanium-black.png'
 
 interface ProjectCardProps {
   title: string;
@@ -77,6 +78,18 @@ const Portfolio = () => {
         <div className="bg-yellow-500 flex flex-row gap-4 construction-pattern px-8 py-2 mb-16 rounded-lg">
           <p className='bg-yellow-500 px-8 py-4 rounded-lg text-black font-semibold mx-auto text-xl lg:text-2xl'>I&apos;m in the process of updating my portfolio, so there are some rough edges. Updates daily.</p>
         </div>
+
+        <section className="grid grid-cols-1 lg:grid-cols-3 items-center gap-20 md:gap-16 lg:gap-24 mb-24 max-w-4xl mx-auto">
+          <Image src={stanfordImage} alt="Stanford University" />
+          <div className="col-span-2 space-y-4">
+            <p className="bg-blue-950 text-blue-100 rounded-full inline-block px-3 py-1 text-sm/6 font-semibold ring-1 ring-orange-600 mb-4 uppercase">Just launched 🚀</p>
+            <h3 className="text-4xl font-semibold">Bringing stories to life: an immersive photojournalism experience for Stanford</h3>
+            <p className="text-xl">
+            To bring Stanford’s photojournalism to life, I designed an immersive, scroll-driven content experience inspired by <i>Snow Fall</i>. The final product is bold, visual, and anything but academic.
+            </p>
+            <p className="!mt-8"><Link href="/projects/stanford" className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Explore the project</Link></p>
+          </div>
+        </section>
 
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-16 lg:gap-24 mb-24">
           {projects.map((project) => (
